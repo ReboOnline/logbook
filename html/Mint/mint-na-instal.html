@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Notes and more">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <meta name='author' content='The World of Rebo'>
+
+    <title>Linux mint 20</title>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <ul>
+        <li>
+          <a href="../../index.html">Home</a>
+        </li>
+        <li>
+            <a href="arcolinuxmain.html">ArcoMain</a>
+        </li>
+       <li>
+        <a href="../../index.html#Read"><span style='color: var(--red);'>Read me first</span></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Navigation -->
+
+    <!-- Info Section één_block -->
+    <section class="info">
+      <div>
+<a href='https://makkelijkelinuxtips.blogspot.com/p/eerst-mint-ubuntu.html' class='top-button'>Linux mint 20 direct doen na de instalatie (BRON; Makkelijke Linuxtips)</a>
+
+                    <!--
+                    <b>bold text
+                    <i>italic text
+                    <del>is doorgestreept
+                    <ins> is onderstreept
+                    <mark>is geel markeer
+                    <sup> kleine boven text
+
+ ----Hier onder de snippet 'comment' en vul deze aan met 'dd' en '1dd als een antwoord' --------->
+
+
+                 <!-- table comment Rebo -->
+                 <table class="content-table">
+                   <thead>
+                     <tr class="active-row">
+                       <th>Deel 1 | BESLIST NOODZAKELIJKE INGREPEN</th>
+                     </tr>
+                   </thead>
+                   <tbody>
+                      <tr>
+                         <td>
+                                 <h2>Installeer alle beschikbare updates</h2>
+                                 <ul><li>Eerst de boel bijwerken, daarna de rest pas...
+                                     <br>
+                                     <dd style='color: var(--blue)'><i>Menuknop - Beheer - Bijwerkbeheer</i></dd>
+                                     <br>
+                                     <dd>Controleer op beschikbare actualiseringen pakketten en installeer ze allemaal.</dd>
+                                 </li></ul>  
+                                 <h4>Of</h4>
+                                 <h2>Run een Rebo script</h2> 
+                                 <dd> Via <a href="https://github.com/ReboOnline/Arco">Github</a> kom je bij mijn linux projecten</dd>
+                                      <br>
+                                 <dd>Of maak er zelf een <a href="../codes/bash.html">Script</a></dd>
+                          </td>
+                      </tr>
+
+  <tr>
+    <td>
+      <h2>Verlaag de swapneiging (belangrijk)</h2>
+      <ul><li>a. Controleer allereerst de huidige swapneiging (swappiness) van uw Linux Mint:
+        <dd style='color: var(--blue)'><i>cat /proc/sys/vm/swappiness</i></dd>
+
+      </li></ul>
+      <ul><li>Kopieer en plak dan
+        <dd style='color: var(--blue)'><i>xed admin:///etc/sysctl.conf</i></dd>
+      </li></ul>
+
+      <ul><li>Voeg helemaal onderaan in het zojuist geopende tekstbestand, de volgende regels toe
+        <dd style='color: var(--blue)'><i># Verminder de swapneiging tot een redelijker niveau<br>vm.swappiness=10</i></dd>
+      </li></ul>
+
+      <ul><li>Sla het tekstbestand op en herstart de computer <b>(Een volledige herstart)</b></li></ul>
+      <ul><li>Controleer daarna even de nieuwe swapneiging in de terminal, met de volgende opdracht
+        <dd style='color: var(--blue)'><i>cat /proc/sys/vm/swappiness</i></dd>
+      <dd>Als het goed is, staat die nu op 10.</dd>
+      </li></ul>
+      <br>
+      <br>
+      <dd style='color: var(--green)'><i>NOTE:Bij computer met een SSD (Solid State Disk) moet de swapneiging overigens altijd op 5 staan, ongeacht de hoeveelheid RAM-geheugen.</i></dd>
+    </td>
+  </tr>
+
+                     <tr>
+                         <td>
+                             <h2>Timeshift</h2>
+                                 <ul><li>Timeshift is handig om het systeem weer snel op orde te krijgen als er iets misgaat
+                                     <br>
+                                     <dd style='color: var(--blue)'><i>Menuknop - Beheer - Timeshift</i></dd>
+                                     <br>
+                                     <dd>Stel bij Instellingen - Rooster, Timeshift zo in dat die een maandelijkse 
+                                         momentopname maakt. Stel het maximumaantal opgeslagen momentopnamen in op twee. 
+                                         Niet meer! Want meer is geheel overbodig en kan onder bepaalde omstandigheden 
+                                         krankzinnig veel schijfruimte kosten.</dd>
+                                 </li></ul>
+                             </td>
+                     </tr>
+
+                     <tr>
+                        <td>
+                          <h2>Verbeter de instellingen van Bijwerkbeheer</h2>
+                              <ul><li><h4>Zo zet u opstartlader Grub, systemd, aanmeldbeheerder LightDM, linux-firmware en de systeemkern vast op hun huidige versies:</h4>
+                                    <dd>a. Zorg ervoor dat alle programma's die apt gebruiken (Bijwerkbeheer, Programmabeheer, Synaptic pakketbeheer enz.) zijn gesloten.</dd>
+                                    <br>
+                                    <dd>b. Open een terminalvenster.</dd>
+                                    <br>
+                                    <dd>c. Kopieer en plak de volgende opdrachtregel in het terminalvenster (dit is één lange regel!):</dd>
+                                      <dd style='color: var(--blue)'><i>sudo apt-mark hold "grub-*" "grub2*" systemd "systemd-*" lightdm slick-greeter "linux-generic*" "linux-headers-generic*" "linux-image-generic*" "linux-signed-generic*" "linux-signed-image-generic*" linux-libc-dev linux-firmware intel-microcode amd64-microcode</i></dd>
+                                      <br>
+                                    <dd>d. Nakijken welke pakketten er precies zijn vastgezet, dat kan via de terminalopdracht
+                                      <br>
+                                      <dd style='color: var(--blue)'><i>apt-mark showhold</i></dd>
+                                    </dd>  
+                              </li></ul>
+
+                              <ul><li><h4>Ongedaan maken van vastzetten van systeemonderdelen: de aanpak</h4>
+                                <dd>a. Start het programma Timeshift en maak een eenmalige momentopname. Zodoende kunt u het systeem altijd terugzetten op de vastgezette toestand, indien het installeren van de vastgezette pakketten slecht zou uitpakken. Sluit daarna Timeshift weer.</dd>
+                                <br>
+                                <dd>b. Zorg ervoor dat alle programma's die apt gebruiken (Bijwerkbeheer, Programmabeheer, Synaptic pakketbeheer enz.) zijn gesloten.</dd>
+                                <br>
+                                <dd>c. Open een terminalvenster.</dd>
+                                <br>
+                                <dd>d. Kopieer en plak de volgende opdrachtregel in het terminalvenster (dit is één lange regel!):</dd>
+                                <dd style='color: var(--blue)'><i>sudo apt-mark unhold "grub-*" "grub2*" systemd "systemd-*" lightdm slick-greeter "linux-generic*" "linux-headers-generic*" "linux-image-generic*" "linux-signed-generic*" "linux-signed-image-generic*" linux-libc-dev linux-firmware intel-microcode amd64-microcode</i></dd>
+                                <br>
+                                <dd>e. Kijk vervolgens nog even na of het ongedaan maken van de vastzetting is gelukt; dat kan met deze terminalopdracht, waarvoor geen rootbevoegdheid (sudo) nodig is:</dd>
+                                <dd style='color: var(--blue)'><i>apt-mark showhold</i></dd>
+                                <br>
+                                <dd>Als het ongedaan maken van de vastzetting is gelukt, dan zou u geen enkele uitvoer moeten zien (althans niet voor Grub, systemd, LighDM en de systeemkern).</dd>
+                                <br>
+                                <dd>e. Start tot slot Bijwerkbeheer, ververs het en installeer alle nieuwe bijgewerkte pakketten die u krijgt aangeboden.</dd>
+                                <br>
+                                <dd><b>Waarschuwing:</b> Als hetsysteem raakt toch van slag door een bijgewerkt vitaal systeemonderdeel, dan is het terugzetten van een momentopname van Timeshift of een volledige schone herinstallatie van Linux Mint soms de enige oplossing....</dd>
+                              </li></ul>
+                              
+                        </td>
+                     </tr>
+
+    <tr>
+      <td>
+        <h2>Zet de firewall aan</h2>
+        <ul><li>Start het terminalvenster en plak de volgende regel
+          <dd style='color: var(--blue)'><i>sudo ufw enable</i></dd>
+        </li></ul>
+        <br>
+        <ul><li>De status van de firewall nakijken
+          <dd style='color: var(--blue)'><i>sudo ufw status verbose</i></dd>
+        </li></ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <h2>.RAR, p7zip-rar, Catfish, en VLC</h2>
+        <ul><li>Om deze allemaal tegelijk te installeren plak de volgende regel in het terminalvenster:
+          <dd style='color: var(--blue)'><i>sudo apt-get install doublecmd-gtk pavucontrol rar p7zip-rar catfish vlc</i></dd>
+        </li></ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h2>Schakel de snelle gebruikerswissel uit</h2>
+        <ul><li>Volledig uitschakelen van de snelle gebruikerswissel doet u zo:
+          <dd>Kopieer en plak de volgende opdrachtregel in de terminal, om het bewerkingsprogramma te installeren dat u hiervoor nodig heeft:</dd>
+          <dd style='color: var(--blue)'><i>sudo apt-get install dconf-editor</i></dd>
+        </li></ul>     
+        <ul><li>Wederom in de terminal:
+          <dd style='color: var(--blue)'><i>dconf-editor</i></dd>
+        </li></ul>
+        <ul><li> In dat programmaatje klikt je door naar:
+          <dd style='color: var(--blue)'><i>org - cinnamon - desktop - lockdown</i></dd>
+        </li></ul>
+        <ul><li>Zet aan:
+          <dd style='color: var(--blue)'><i>disable-user-switching</i></dd>
+        </li></ul>
+        <ul><li>Sluit dconf-editor.</li></ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h2>Schakel de toetscombinatie CTRL+ALT+BACKSPACE in</h2>
+        <ul><li>Kopieer en plak de volgende toverspreuk in de terminal
+          <dd style='color: var(--blue)'><i>xed admin:///etc/default/keyboard</i></dd>
+        </li></ul>
+        <ul><li>Nu opent zich een tekstbestand. Vervang daarin de regel:
+          <dd style='color: var(--blue)'><i>XKBOPTIONS=""</i></dd>
+        </li></ul>
+        <ul><li>.....door de volgende regel
+          <dd style='color: var(--blue)'><i>XKBOPTIONS="terminate:ctrl_alt_bksp"</i></dd>
+        </li></ul>
+        <ul><li>Sla het bestand op en herstart daarna de computer <b>(volledige herstart)</b>.
+          <dd><i>Ctrl-Alt-Backspace zou nu de grafische omgeving moeten herstarten en u terugwerpen in het aanmeldscherm.</i></dd>        
+        </li></ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <h2>Xfce: verlaag de belasting van de videokaart</h2>
+        <ul><li> Menuknop - Instellingen - Bureaubladinstellingen
+          <dd>Vensterbeheer: verander</dd>
+          <dd style='color: var(--blue)'><i>Xfwm4 + Beeldsamenstelling</i></dd>
+          <dd>in de volgende optie</dd>
+          <dd style='color: var(--blue)'><i>Xfwm4 + Compton</i></dd>
+        </li></ul>
+      </td>
+    </tr>
+                    
+
+                     
+                 
+                   </tbody>
+                   </table>
+                 <!-- table comment Rebo -->
+
+
+                 
+
+ 
+
+
+
+      <a href="#" class="button">Back to top</a>
+      </div>
+    </section>
+
+<!-- Info Section één_block -->
+
+   
+
+    <!-- Footer -->
+    <footer>
+      <p>The World of Rebo &copy; 2020</p><a href="#" class="button">Home</a>
+    </footer>
+
+  </div>
+  <!-- Wrapper Ends -->
+</body>
+</html>
