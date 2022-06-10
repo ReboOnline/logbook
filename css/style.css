@@ -27,10 +27,23 @@ body {
 }
 
 a {
-  color: var(--dark);
-  /* text-decoration: underline; */
-  /* font-style: italic; */
+  color: var(--blue);
+  text-decoration: underline;
 }
+a:hover {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+/* .Body-Link {
+  color: blue;
+}
+.Body-Link:hover {
+  color: var(--light);
+}
+.Body-Link:visited {
+  color: var(--dark);
+} */
 
 .aBTN {
   color: var(--primary);
