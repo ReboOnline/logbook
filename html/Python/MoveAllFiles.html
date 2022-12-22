@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Notes and more">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <meta name='author' content='The World of Rebo'>
+
+    <title>New page</title>
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- Navigation -->
+<nav class="main-nav">
+  <ul>
+    <li>
+      <a href="../../index.html">Home Online</a>
+    </li>
+    <li>
+      <a href="index-mint.html">Linux Mint</a>
+    </li>
+    <li>
+      <a href="html/ArcoLinux/arcolinuxmain.html">ArcoMain</a>
+    </li>
+   <li>
+      <a href="#Read"><span style='color: var(--red);'>Read me first</span></a>
+    </li>
+  </ul>
+</nav>
+<!-- Navigation -->
+
+    <!-- Info Section één_block -->
+    <section class="info">
+      <div>
+<!-- StickyButton -->
+<div class="fixed">  
+  <a href="#"><span style='color: var(--blue);'>Top</span></a>
+  </div>
+<!-- StickyButton -->
+
+               <!-- <b> = bold text
+                    <i> = italic text
+                    <del> =  doorgestreept
+                    <ins> = onderstreept
+                    <mark> = geel markeer
+                    <sup> = kleine boven text -->
+<!--Hieronder een snippet 'colorvak' met strongBR, li-strong, dd-strong, codeblue, aReboBlue, 
+imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
+ 
+<code><span style='color: var(--dark);'> <span style='color: var(--blue);'>Last edit: 16-12-2022</span></code>
+<br>
+<br>
+<h1>Move all files in a directory to another directory</h1>
+<dd>
+
+  To move all files in a directory to another directory using Python, you can use the shutil module's move function. <br>
+  Here is an example of how you can do this:<br>
+<br>
+<pre><code>
+  import shutil
+  import os
+  
+  <span style='color: var(--green);'># Set the source and destination directories</span>
+  source_dir = '/path/to/source/directory'
+  dest_dir = '/path/to/destination/directory'
+  <br>
+  <span style='color: var(--green);'># Get a list of all the files in the source directory</span>
+  files = os.listdir(source_dir)
+  
+  <span style='color: var(--green);'># Iterate over the list of files</span>
+  for file in files:
+     &#8194;<span style='color: var(--green);'> # Construct the full file paths</span>
+     &#8194;source_path = os.path.join(source_dir, file)
+     &#8194;dest_path = os.path.join(dest_dir, file)
+     &#8194;<span style='color: var(--green);'># Use shutil.move to move the file from the source to the destination</span>
+     &#8194;shutil.move(source_path, dest_path)
+</code></pre>
+
+This code will move all the files in the source_dir to the dest_dir, preserving the directory structure. If you want to flatten the directory structure and move all the files directly into the destination directory, you can modify the dest_path as follows:<br>
+<br>
+<pre><code>dest_path = os.path.join(dest_dir, os.path.basename(file))</code></pre>
+<br>
+This will move all the files directly into the dest_dir, rather than preserving the original directory structure.<br>
+
+</dd>
+<br>
+<hr>
+<br>
+
+<!--Hieronder een snippet 'colorvak' met strongBR, li-strong, dd-strong, codeblue, aReboBlue,
+imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
+
+
+
+
+                 
+
+ 
+
+
+
+
+      </div>
+    </section>
+
+   
+
+    <!-- Footer -->
+    <footer>
+      <!-- <a href="../../index.html"><span style='color: var(--blue);'>Home</span></a> -->
+      <code><span style='color: var(--dark);'> <span style='color: var(--blue);'> <a class='Body-Link' href='../../index.html'>Home</a> </span></code>
+    </footer>
+    <!-- Footer -->
+
+  </div>
+  <!-- Wrapper Ends -->
+</body>
+</html>

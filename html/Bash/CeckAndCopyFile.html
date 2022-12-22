@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Notes and more">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <meta name='author' content='The World of Rebo'>
+
+    <title>New page</title>
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- Navigation -->
+<nav class="main-nav">
+  <ul>
+    <li>
+      <a href="../../index.html">Home Online</a>
+    </li>
+    <li>
+      <a href="index-mint.html">Linux Mint</a>
+    </li>
+    <li>
+      <a href="html/ArcoLinux/arcolinuxmain.html">ArcoMain</a>
+    </li>
+   <li>
+      <a href="#Read"><span style='color: var(--red);'>Read me first</span></a>
+    </li>
+  </ul>
+</nav>
+<!-- Navigation -->
+
+    <!-- Info Section één_block -->
+    <section class="info">
+      <div>
+<!-- StickyButton -->
+<div class="fixed">  
+  <a href="#"><span style='color: var(--blue);'>Top</span></a>
+  </div>
+<!-- StickyButton -->
+
+               <!-- <b> = bold text
+                    <i> = italic text
+                    <del> =  doorgestreept
+                    <ins> = onderstreept
+                    <mark> = geel markeer
+                    <sup> = kleine boven text -->
+<!--Hieronder een snippet 'colorvak' met strongBR, li-strong, dd-strong, codeblue, aReboBlue, 
+imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
+ 
+<code><span style='color: var(--dark);'> <span style='color: var(--blue);'>Last edit:</span></code>
+<br>
+<br>
+<h1></h1>
+<dd><strong>To check if a file is in a specific folder and notify</strong><br>
+You can use the test command with the -f option, which checks if a file exists and is a regular file, and the echo command to print a message to the terminal. For example:
+<br>
+<pre><code>
+  if test -f /path/to/folder/filename; then
+      echo "File exists in folder"
+  else
+      echo "File does not exist in folder"
+  fi
+</code></pre>
+  
+<br>
+
+<strong>To copy a file to a specific folder:</strong><br>
+You can use the cp command, for example:
+<br>  
+
+<pre><code>
+  cp /path/to/source/file /path/to/destination/folder
+</code></pre>
+  
+  <br>
+  
+  <strong>To notify when the file has been copied:</strong><br>
+  You can use the echo command to print a message to the terminal. For example:
+  
+  <pre><code>
+    echo "File copied successfully"
+  </code></pre>
+  
+  <strong>If an error occurs while trying to copy the file</strong> <br>
+  You can use the echo command to print an error message. For example:
+  
+  <pre><code>
+    echo "Error: Could not copy file" >&2
+  </code></pre>
+  
+  <strong>combines these commands</strong> <br>
+  Here is an example script that combines these commands to check if a file is in a specific folder and notify, copy it to that folder, and notify when done or if an error occurred:
+  
+ <pre><code>
+  #!/bin/bash
+  
+  # Check if file exists in folder
+  if test -f /path/to/folder/filename; then
+      echo "File exists in folder"
+  else
+      echo "File does not exist in folder"
+      exit 1
+  fi
+  
+  # Copy file to destination folder
+  cp /path/to/source/file /path/to/destination/folder
+  
+  # Check if copy was successful
+  if [ $? -eq 0 ]; then
+      # Print success message
+      echo "File copied successfully"
+  else
+      # Print error message
+      echo "Error: Could not copy file" >&2
+  fi
+ </code></pre>
+  
+  This script can be executed by running ./script.sh in the terminal, where script.sh is the name of the script file.
+
+</dd>
+<br>
+<hr>
+<br>
+
+<!--Hieronder een snippet 'colorvak' met strongBR, li-strong, dd-strong, codeblue, aReboBlue,
+imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
+
+
+
+
+                 
+
+ 
+
+
+
+
+      </div>
+    </section>
+
+   
+
+    <!-- Footer -->
+    <footer>
+      <!-- <a href="../../index.html"><span style='color: var(--blue);'>Home</span></a> -->
+      <code><span style='color: var(--dark);'> <span style='color: var(--blue);'> <a class='Body-Link' href='../../index.html'>Home</a> </span></code>
+    </footer>
+    <!-- Footer -->
+
+  </div>
+  <!-- Wrapper Ends -->
+</body>
+</html>

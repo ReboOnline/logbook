@@ -18,8 +18,14 @@
     <li>
       <a href="../../index.html">Home Online</a>
     </li>
+    <li>
+      <a href="index-mint.html">Linux Mint</a>
+    </li>
+    <li>
+      <a href="html/ArcoLinux/arcolinuxmain.html">ArcoMain</a>
+    </li>
    <li>
-      <a href="../../index.html#Life"><span style='color: var(--red);'>Read me first</span></a>
+      <a href="#Read"><span style='color: var(--red);'>Read me first</span></a>
     </li>
   </ul>
 </nav>
@@ -28,22 +34,84 @@
     <!-- Info Section één_block -->
     <section class="info">
       <div>
-<a href='linux-mint.html' class='top-button'>LinuxMint Home</a>
+<!-- StickyButton -->
+<div class="fixed">  
+  <a href="Update.html"><span style='color: var(--blue);'>Top</span></a>
+  </div>
+<!-- StickyButton -->
 
-                    <!--
-                    <b>bold text
-                    <i>italic text
-                    <del>is doorgestreept
-                    <ins> is onderstreept
-                    <span style='color: var(--blue);'>#</span>
- ----Hier onder de snippet 'comment' en vul deze aan met 'dd' en '1dd als een antwoord' --------->
-<tr>
-    <td>
-        <h3>Update Linux mint</h3>
-        <dd></dd>
-        </td>
-</tr>
-<!-- Hieronder een snippet 'TR1' met dd, dd-bleu, ulli, olli, spanColor1 -->
+               <!-- <b> = bold text
+                    <i> = italic text
+                    <del> =  doorgestreept
+                    <ins> = onderstreept
+                    <mark> = geel markeer
+                    <sup> = kleine boven text -->
+<!--Hieronder een snippet 'colorvak' met strongBR, li-strong, dd-strong, codeblue, aReboBlue, 
+imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
+ 
+<code><span style='color: var(--dark);'> <span style='color: var(--blue);'>last edit: 14-12-2022</span></code>
+<br>
+<br>
+<h1>Update Linux Mint via the terminal:</h1>
+<dd><strong>A simple bash script that can be used to update Linux Mint:</strong><br>
+  &#8195;First make a file with the name "<span style='color: var(--blue);'>up</span>"
+<br>
+<pre><code>
+<xmp>
+  #!/bin/bash
+
+  # this will clear the terminal
+  Clear
+
+  # update package list
+  sudo apt-get update
+
+  # echo "" will write a empty line in the terminal
+  echo ""
+
+  # sleep 2 will wait 2 seconds before the next command will start
+  sleep 2
+
+  # upgrade all installed packages
+  sudo apt-get upgrade
+
+  echo ""
+
+  sleep 2
+
+  # clean up obsolete packages
+  sudo apt-get autoremove
+</xmp>
+</code></pre>
+<br>
+<strong>Make the script executable:</strong><br>
+To make a bash script executable, you need to set the appropriate permissions on the file. <br>
+You can do this using the chmod command. <br>
+This will give the file execute permission for the owner of the file.
+<pre><code>
+<xmp>
+  chmod +x up
+</xmp>
+</code></pre>
+<br>
+
+
+<strong>Copy the file to the <span style='color: var(--blue);'>/usr/local/bin</span> folder:</strong> <br>
+This way you can use the command "<span style='color: var(--blue);'>up</span>" annywhere in a terminal. 
+Use the the code below in the terminal. <br>
+<pre><code>
+<xmp>
+sudo cp up /usr/local/bin
+</xmp>
+</code></pre> 
+
+
+
+</dd>
+<br>
+<hr>
+
+
 
 
                  
@@ -52,18 +120,18 @@
 
 
 
-      <a href="#" class="button">Back to top</a>
+
       </div>
     </section>
-
-<!-- Info Section één_block -->
 
    
 
     <!-- Footer -->
     <footer>
-      <p>The World of Rebo &copy; 2021</p><a href="Update.html" class="button">Top</a>
+      <!-- <a href="../../index.html"><span style='color: var(--blue);'>Home</span></a> -->
+      <code><span style='color: var(--dark);'> <span style='color: var(--blue);'> <a class='Body-Link' href='../../index.html'>Home</a> </span></code>
     </footer>
+    <!-- Footer -->
 
   </div>
   <!-- Wrapper Ends -->

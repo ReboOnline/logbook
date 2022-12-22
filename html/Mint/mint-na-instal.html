@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../css/style.css">
     <meta name='author' content='The World of Rebo'>
 
-    <title>Linux mint 20</title>
+    <title>Linux Mint na install</title>
 </head>
 <body>
   <div class="wrapper">
@@ -18,8 +18,14 @@
     <li>
       <a href="../../index.html">Home Online</a>
     </li>
+    <li>
+      <a href="index-mint.html">Linux Mint</a>
+    </li>
+    <li>
+      <a href="html/ArcoLinux/arcolinuxmain.html">ArcoMain</a>
+    </li>
    <li>
-      <a href="../../index.html#Life"><span style='color: var(--red);'>Read me first</span></a>
+      <a href="../../index.html#Read"><span style='color: var(--red);'>Read me first</span></a>
     </li>
   </ul>
 </nav>
@@ -28,26 +34,25 @@
     <!-- Info Section één_block -->
     <section class="info">
       <div>
-<a href='https://makkelijkelinuxtips.blogspot.com/p/eerst-mint-ubuntu.html' class='top-button'>Linux mint 20 direct doen na de instalatie (BRON; Makkelijke Linuxtips)</a>
+<code><span style='color: var(--dark);'> <span style='color: var(--blue);'>Last edit: 18-12-2022</span></code>
+<!-- StickyButton -->
+<div class="fixed">  
+  <a class="Body-Link" href="mint-na-instal.html"><span style='color: var(--blue);'>To the top</span></a>
+  </div>
+<!-- StickyButton -->
 
-                    <!--
-                    <b>bold text
-                    <i>italic text
-                    <del>is doorgestreept
-                    <ins> is onderstreept
-                    <mark>is geel markeer
-                    <sup> kleine boven text
-
- ----Hier onder de snippet 'comment' en vul deze aan met 'dd' en '1dd als een antwoord' --------->
+               <!-- <b> = bold text
+                    <i> = italic text
+                    <del> =  doorgestreept
+                    <ins> = onderstreept
+                    <mark> = geel markeer
+                    <sup> = kleine boven text -->
+<!--Hieronder een snippet 'colorvak' met strongBR, li-strong, dd-strong, codeblue, aReboBlue, 
+imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli, Tab1, Tab2, Tab3 -->
+<br><br><br>
 
 
                  <!-- table comment Rebo -->
-                 <table class="content-table">
-                   <thead>
-                     <tr class="active-row">
-                       <th>Deel 1 | BESLIST NOODZAKELIJKE INGREPEN</th>
-                     </tr>
-                   </thead>
                    <tbody>
                       <tr>
                          <td>
@@ -56,18 +61,12 @@
                                      <br>
                                      <dd style='color: var(--blue)'><i>Menuknop - Beheer - Bijwerkbeheer</i></dd>
                                      <br>
-                                     <dd>Controleer op beschikbare actualiseringen pakketten en installeer ze allemaal.</dd>
+                                     <dd>Controleer op beschikbare pakketten en installeer ze allemaal.</dd>
                                  </li></ul>  
-                                 <h4>Of</h4>
-                                 <h2>Run een Rebo script</h2> 
-                                 <dd> Via <a href="https://github.com/ReboOnline/Arco">Github</a> kom je bij mijn linux projecten</dd>
-                                      <br>
-                                 <dd>Of maak er zelf een <a href="../codes/bash.html">Script</a></dd>
-                          </td>
-                      </tr>
-
-  <tr>
-    <td>
+                                 
+  <br>
+  <br>                               
+  <hr>
       <h2>Verlaag de swapneiging (belangrijk)</h2>
       <ul><li>a. Controleer allereerst de huidige swapneiging (swappiness) van uw Linux Mint:
         <dd style='color: var(--blue)'><i>cat /proc/sys/vm/swappiness</i></dd>
@@ -89,11 +88,9 @@
       <br>
       <br>
       <dd style='color: var(--green)'><i>NOTE:Bij computer met een SSD (Solid State Disk) moet de swapneiging overigens altijd op 5 staan, ongeacht de hoeveelheid RAM-geheugen.</i></dd>
-    </td>
-  </tr>
-
-                     <tr>
-                         <td>
+      <br>
+      <br>                               
+      <hr>
                              <h2>Timeshift</h2>
                                  <ul><li>Timeshift is handig om het systeem weer snel op orde te krijgen als er iets misgaat
                                      <br>
@@ -104,11 +101,65 @@
                                          Niet meer! Want meer is geheel overbodig en kan onder bepaalde omstandigheden 
                                          krankzinnig veel schijfruimte kosten.</dd>
                                  </li></ul>
-                             </td>
-                     </tr>
+                                 <br>
+                                 <br>                               
+                                 <hr>
+                                
+                                 <h2>Run script "NewStart"</h2> 
+                                 <dd> Via deze <a class='Body-Link' href='https://github.com/ReboOnline/NewstartMint.git' target="_blank" rel="noopener noreferrer">Github</a> link kom je bij NewstartMint <br>
 
-                     <tr>
-                        <td>
+                                      <br>
+                                        <strong>Of via de terminal:</strong><br>
+                                        Kopieër en palk de onderstaande regel 
+                                        <pre><code>
+                                        git clone https://github.com/ReboOnline/NewstartMint.git
+                                        </code></pre>
+                                        <br>
+                                        
+                                        <strong>Of maak onderstaand script zelf:</strong><span style='color: var(--green);'><ins><i> NOTE: Dit zal alle benodigde scrips en files downloaden en de NewStart opstarten</i></ins></span><br>
+                                        Ga naar de map Downloads. 
+                                        <ol>
+                                        <li>Maak een nieuwe file MintGitHub.sh (Of welke naam dan ook 😁)</li>
+                                        <li>Open de file en kopieër en plak onderstaande code</li>
+                                        <li>Open in de zelfde map waar de file MintGitHub staat met de rechtermuisknop een terminal.</li>
+                                        <li>Maak de File MintGitHub executable met de code <span style='color: var(--blue);'>chmod +x MintGitHub.sh</span> </li>
+                                        <li>Start de MintGitHub.sh met de code <span style='color: var(--blue);'>./MintGitHub.sh</span> in de terminal </li>
+                                        </ol>
+                                        <pre><code>
+                                          #!/bin/bash 
+                                          
+                                          echo "Installing git"
+                                          sleep 2
+                                          #Install git 
+                                          sudo apt-get install git
+                                          
+                                          echo "downloading NewstartMint"
+                                          sleep 2
+                                          #clone the repository
+                                          git clone https://github.com/ReboOnline/NewstartMint.git
+                                          
+                                          echo "Enter the new folder NewstartMint"
+                                          sleep 2
+                                          #Enter the new folder NewstartMint
+                                          cd NewstartMint
+                                          
+                                          echo "making NewStart executable"
+                                          sleep 2
+                                          #making NewStart executable
+                                          chmod +x NewStart
+                                          
+                                          echo "Starting te file Newsart to begin"
+                                          sleep 2
+                                          #start NewStart
+                                          ./NewStart
+                                        </code></pre>
+                                        <br>
+                                  </dd>
+
+                                 <br>
+                                 <br>
+                                 <hr>
+
                           <h2>Verbeter de instellingen van Bijwerkbeheer</h2>
                               <ul><li><h4>Zo zet u opstartlader Grub, systemd, aanmeldbeheerder LightDM, linux-firmware en de systeemkern vast op hun huidige versies:</h4>
                                     <dd>a. Zorg ervoor dat alle programma's die apt gebruiken (Bijwerkbeheer, Programmabeheer, Synaptic pakketbeheer enz.) zijn gesloten.</dd>
@@ -144,11 +195,10 @@
                                 <dd><b>Waarschuwing:</b> Als hetsysteem raakt toch van slag door een bijgewerkt vitaal systeemonderdeel, dan is het terugzetten van een momentopname van Timeshift of een volledige schone herinstallatie van Linux Mint soms de enige oplossing....</dd>
                               </li></ul>
                               
-                        </td>
-                     </tr>
+  <br>
+  <br>                               
+  <hr>
 
-    <tr>
-      <td>
         <h2>Zet de firewall aan</h2>
         <ul><li>Start het terminalvenster en plak de volgende regel
           <dd style='color: var(--blue)'><i>sudo ufw enable</i></dd>
@@ -157,19 +207,18 @@
         <ul><li>De status van de firewall nakijken
           <dd style='color: var(--blue)'><i>sudo ufw status verbose</i></dd>
         </li></ul>
-      </td>
-    </tr>
+ <br>
+  <br>                               
+  <hr>
 
-    <tr>
-      <td>
         <h2>.RAR, p7zip-rar, Catfish, en VLC</h2>
         <ul><li>Om deze allemaal tegelijk te installeren plak de volgende regel in het terminalvenster:
           <dd style='color: var(--blue)'><i>sudo apt-get install doublecmd-gtk pavucontrol rar p7zip-rar catfish vlc</i></dd>
         </li></ul>
-      </td>
-    </tr>
-    <tr>
-      <td>
+ <br>
+  <br>                               
+  <hr>
+
         <h2>Schakel de snelle gebruikerswissel uit</h2>
         <ul><li>Volledig uitschakelen van de snelle gebruikerswissel doet u zo:
           <dd>Kopieer en plak de volgende opdrachtregel in de terminal, om het bewerkingsprogramma te installeren dat u hiervoor nodig heeft:</dd>
@@ -185,10 +234,10 @@
           <dd style='color: var(--blue)'><i>disable-user-switching</i></dd>
         </li></ul>
         <ul><li>Sluit dconf-editor.</li></ul>
-      </td>
-    </tr>
-    <tr>
-      <td>
+ <br>
+  <br>                               
+  <hr>
+
         <h2>Schakel de toetscombinatie CTRL+ALT+BACKSPACE in</h2>
         <ul><li>Kopieer en plak de volgende toverspreuk in de terminal
           <dd style='color: var(--blue)'><i>xed admin:///etc/default/keyboard</i></dd>
@@ -202,27 +251,23 @@
         <ul><li>Sla het bestand op en herstart daarna de computer <b>(volledige herstart)</b>.
           <dd><i>Ctrl-Alt-Backspace zou nu de grafische omgeving moeten herstarten en u terugwerpen in het aanmeldscherm.</i></dd>        
         </li></ul>
-      </td>
-    </tr>
+ <br>
+  <br>                               
+  <hr>
 
-    <tr>
-      <td>
-        <h2>Xfce: verlaag de belasting van de videokaart</h2>
+        <h2>Alleen voor Xfce: verlaag de belasting van de videokaart</h2>
         <ul><li> Menuknop - Instellingen - Bureaubladinstellingen
           <dd>Vensterbeheer: verander</dd>
           <dd style='color: var(--blue)'><i>Xfwm4 + Beeldsamenstelling</i></dd>
           <dd>in de volgende optie</dd>
           <dd style='color: var(--blue)'><i>Xfwm4 + Compton</i></dd>
         </li></ul>
-      </td>
-    </tr>
                     
 
                      
                  
                    </tbody>
-                   </table>
-                 <!-- table comment Rebo -->
+                 
 
 
                  
