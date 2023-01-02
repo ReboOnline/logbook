@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Notes and more">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <meta name='author' content='The World of Rebo'>
+
+    <title>New page</title>
+    <style>
+      /* Make the table fill the width of the screen */
+      table {
+        width: 100%;
+      }
+    
+      /* Make the table cells wrap their content */
+      td {
+        white-space: normal;
+      }
+    </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- Navigation -->
+<nav class="main-nav">
+  <ul>
+    <li>
+      <a href="../../index.html">Home</a>
+    </li>
+    <li>
+      <a href="index-mint.html">Linux Mint</a>
+    </li>
+    <li>
+      <a href="html/ArcoLinux/arcolinuxmain.html">ArcoMain</a>
+    </li>
+   <li>
+      <a href="#Read"><span style='color: var(--red);'>Read me first</span></a>
+    </li>
+  </ul>
+</nav>
+<!-- Navigation -->
+
+    <!-- Info Section één_block -->
+    <section class="info">
+      <div>
+<!-- StickyButton -->
+<div class="fixed">  
+  <a href="#"><span style='color: var(--blue);'>Top</span></a>
+  </div>
+<!-- StickyButton -->
+
+               <!-- <b> = bold text
+                    <i> = italic text
+                    <del> =  doorgestreept
+                    <ins> = onderstreept
+                    <mark> = geel markeer
+                    <sup> = kleine boven text -->
+<!--Hieronder een snippet 'colorvak' met strongBR, li-strong, dd-strong, codeblue, aReboBlue, 
+imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
+ 
+<code><span style='color: var(--dark);'> <span style='color: var(--blue);'>Last edit:</span></code>
+<br>
+<br>
+<h1>Copy Code Button</h1>
+<dd><strong>Click the button to copy the code below to the clipboard:</strong><br>
+  <button id="copy-button">Copy Code</button>
+  <pre id="code-to-copy"> <code>
+This is the code that will be copied to the clipboard when the button is clicked.
+  </pre></code>
+
+</dd>
+<br>
+<hr>
+<br>
+
+<!--Hieronder een snippet 'colorvak' met strongBR, li-strong, dd-strong, codeblue, aReboBlue,
+imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
+ 
+<!-- <code><span style='color: var(--dark);'> <span style='color: var(--blue);'></span></code>
+<br>
+<br>
+<h1>Copy Code Button</h1>
+<dd><strong>Click the button to copy the code below to the clipboard:</strong><br>
+
+  <table style="background-color: var(--dark); filter: alpha(opacity=40); opacity: 0.30;border:1px rgb(187, 184, 184) solid;">
+    <tr>
+      <th><button id="copy-button">Copy Code</button></th>
+    </tr>
+    <tr>
+      <td><pre id="code-to-copy"> <code>Cell 1 <br>
+        Click the button to copy the code fromt this table below to the clipboard:
+      </pre></code>
+      </td>
+    </tr>
+
+  </table> -->
+<!-- Hieronder een snippet 'TR1' met dd, dd-bleu, ulli, olli, spanColor1 -->
+
+</dd>
+<br>
+<hr>
+<br>
+
+<!--Hieronder een snippet 'colorvak' met strongBR, li-strong, dd-strong, codeblue, aReboBlue,
+imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
+
+
+
+
+      </div>
+    </section>
+
+   
+
+    <!-- Footer -->
+    <footer>
+      <!-- <a href="../../index.html"><span style='color: var(--blue);'>Home</span></a> -->
+      <code><span style='color: var(--dark);'> <span style='color: var(--blue);'> <a class='Body-Link' href='../../index.html'>Home</a> </span></code>
+    </footer>
+    <!-- Footer -->
+
+  </div>
+  <!-- Wrapper Ends -->
+
+  <script>
+    const copyButton = document.getElementById('copy-button');
+    const codeToCopy = document.getElementById('code-to-copy');
+
+    copyButton.addEventListener('click', () => {
+      navigator.clipboard.writeText(codeToCopy.textContent).then(() => {
+        console.log('Code copied to clipboard');
+      });
+    });
+  </script>
+
+
+</body>
+</html>

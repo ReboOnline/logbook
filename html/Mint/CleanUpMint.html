@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Notes and more">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <meta name='author' content='The World of Rebo'>
+
+    <title>CleanUp Linux Mint</title>
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- Navigation -->
+<nav class="main-nav">
+  <ul>
+    <li>
+      <a href="../../index.html">Home</a>
+    </li>
+    <li>
+      <a href="index-mint.html">Linux Mint</a>
+    </li>
+    <li>
+      <a href="html/ArcoLinux/arcolinuxmain.html">ArcoMain</a>
+    </li>
+   <li>
+      <a href="../../index.html#Read"><span style='color: var(--red);'>Read me first</span></a>
+    </li>
+  </ul>
+</nav>
+<!-- Navigation -->
+
+    <!-- Info Section één_block -->
+    <section class="info">
+      <div>
+<!-- StickyButton -->
+<div class="fixed">  
+  <a href="#"><span style='color: var(--blue);'>Top</span></a>
+  </div>
+<!-- StickyButton -->
+
+               <!-- <b> = bold text
+                    <i> = italic text
+                    <del> =  doorgestreept
+                    <ins> = onderstreept
+                    <mark> = geel markeer
+                    <sup> = kleine boven text -->
+<!--Hieronder een snippet 'colorvak' met strongBR, li-strong, dd-strong, codeblue, aReboBlue, 
+imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
+ 
+<code><span style='color: var(--dark);'> <span style='color: var(--blue);'><a class='Body-Link' href='index-mint.html'>Mint home</a> </span></code>
+<br>
+<br>
+<h1>How to cleanup Linux Mint via terminal</h1>
+<dd><strong>There are several ways to clean up a Linux Mint system via the terminal:</strong><br>
+  <ol>
+  <li>Remove unnecessary or unused packages: You can use the apt-get command to remove unnecessary or unused packages. <br> </li>
+      <span style='color: var(--blue);'>sudo apt-get autoremove</span>
+      <br>
+      <br>
+      <li>Clear the package cache: The package manager keeps copies of all downloaded packages in a cache, which can take up a lot of disk space over time. You can clear the cache by running: <br></li>
+      <span style='color: var(--blue);'>sudo apt-get clean</span>
+      <br>
+      <br>
+      <li>Remove old kernels: Linux Mint keeps multiple kernels as a fallback in case something goes wrong with a new kernel update. However, these old kernels can take up a lot of space. You can remove old kernels using the "<i>purge-old-kernels</i>" script: <br></li>
+      <span style='color: var(--blue);'>sudo apt-get purge-old-kernels</span>
+      <br>
+      <br>
+      <li>Remove temporary files: Temporary files, such as those created by the system or by applications, can accumulate over time and take up a lot of space. You can use the tmpreaper utility to remove these files: <br></li>
+      <span style='color: var(--blue);'>sudo tmpreaper</span>
+      <br>
+      <br>
+      <li>Compact the filesystem: If you have a lot of small files on your system, they can cause the filesystem to become fragmented, which can lead to slower performance. You can use the e4defrag utility to compact the filesystem: <br></li>
+      <span style='color: var(--blue);'>sudo e4defrag /</span>
+      <br>
+      <br>
+      <li>Remove log files: Log files can also accumulate over time and take up a lot of space. You can use the logrotate utility to remove old log files: <br></li>
+      <span style='color: var(--blue);'>sudo logrotate -f /etc/logrotate.conf</span>
+  </ol>
+<br>
+
+<strong>Here is a script that combines the examples I provided above into a single script:</strong><br>
+<br>
+
+<pre><code>
+#!/bin/bash
+
+# Remove unnecessary or unused packages
+sudo apt-get autoremove
+  
+# Clear the package cache
+sudo apt-get clean
+  
+# Remove old kernels
+sudo apt-get purge-old-kernels
+  
+# Remove temporary files
+sudo tmpreaper
+  
+# Compact the filesystem
+sudo e4defrag /
+  
+# Remove log files
+sudo logrotate -f /etc/logrotate.conf
+</code></pre>
+<br>
+<ol>
+  <li>To use this script name it cleanup.sh save it and make it executable with the following command: <br></li>
+  <span style='color: var(--blue);'>chmod +x cleanup.sh</span>
+  <br>
+  <br>
+  <li>To run the script open an terminal in the same direcrory where you have saved the file and type: <br></li>
+  <span style='color: var(--blue);'>./cleanup.sh</span>
+  <br>
+  <br>
+  <li>To run the script from anyware in the system in the terminal you have to copy the file to the right direcrory with the following command: <br></li>
+  <span style='color: var(--blue);'>sudo cp cleanup.sh /usr/local/bin</span> <br>
+  <span style='color: var(--green);'>Note:</span> <i class="Note">Make sure you to open the terminal in de same direcrory where the file is saved</i class="Note">
+  </ol>
+
+</dd>
+<br>
+<hr>
+<br>
+
+<!--Hieronder een snippet 'colorvak' met strongBR, li-strong, dd-strong, codeblue, aReboBlue,
+imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
+
+
+
+
+                 
+
+ 
+
+
+
+
+      </div>
+    </section>
+
+   
+
+    <!-- Footer -->
+    <footer>
+      <!-- <a href="../../index.html"><span style='color: var(--blue);'>Home</span></a> -->
+      <code><span style='color: var(--dark);'> <span style='color: var(--blue);'> <a class='Body-Link' href='../../index.html'>Home</a> </span></code>
+    </footer>
+    <!-- Footer -->
+
+  </div>
+  <!-- Wrapper Ends -->
+</body>
+</html>

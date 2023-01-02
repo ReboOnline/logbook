@@ -463,7 +463,7 @@ header {
 }
 
 .Body-Link {
-  color: vat(--blue);
+  color: var(--blue);
 }
 .Body-Link:hover {
   color: var(--light);
@@ -509,3 +509,9 @@ div.fixed {
   padding: 0.25em 0.65em;
 }
 /* <!-- StickyButton --> */
+
+/* Note class tag */
+.Note {
+  font-size: 12px;
+}
+/* Note class tag */

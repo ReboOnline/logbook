@@ -34,7 +34,7 @@
     <!-- Info Section één_block -->
     <section class="info">
       <div>
-<code><span style='color: var(--dark);'> <span style='color: var(--blue);'>Last edit: 18-12-2022</span></code>
+<code><span style='color: var(--dark);'> <span style='color: var(--blue);'><a class='Body-Link' href='index-mint.html'>Home Mint</a></span></code>
 <!-- StickyButton -->
 <div class="fixed">  
   <a class="Body-Link" href="mint-na-instal.html"><span style='color: var(--blue);'>To the top</span></a>
@@ -111,9 +111,9 @@ imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli, Tab1, Tab2, Tab
                                       <br>
                                         <strong>Of via de terminal:</strong><br>
                                         Kopieër en palk de onderstaande regel 
-                                        <pre><code>
-                                        git clone https://github.com/ReboOnline/NewstartMint.git
-                                        </code></pre>
+<pre><code>
+git clone https://github.com/ReboOnline/NewstartMint.git
+</code></pre>
                                         <br>
                                         
                                         <strong>Of maak onderstaand script zelf:</strong><span style='color: var(--green);'><ins><i> NOTE: Dit zal alle benodigde scrips en files downloaden en de NewStart opstarten</i></ins></span><br>
@@ -125,34 +125,43 @@ imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli, Tab1, Tab2, Tab
                                         <li>Maak de File MintGitHub executable met de code <span style='color: var(--blue);'>chmod +x MintGitHub.sh</span> </li>
                                         <li>Start de MintGitHub.sh met de code <span style='color: var(--blue);'>./MintGitHub.sh</span> in de terminal </li>
                                         </ol>
-                                        <pre><code>
-                                          #!/bin/bash 
+<pre><code>
+
+  #!/bin/bash 
                                           
-                                          echo "Installing git"
-                                          sleep 2
-                                          #Install git 
-                                          sudo apt-get install git
-                                          
-                                          echo "downloading NewstartMint"
-                                          sleep 2
-                                          #clone the repository
-                                          git clone https://github.com/ReboOnline/NewstartMint.git
-                                          
-                                          echo "Enter the new folder NewstartMint"
-                                          sleep 2
-                                          #Enter the new folder NewstartMint
-                                          cd NewstartMint
-                                          
-                                          echo "making NewStart executable"
-                                          sleep 2
-                                          #making NewStart executable
-                                          chmod +x NewStart
-                                          
-                                          echo "Starting te file Newsart to begin"
-                                          sleep 2
-                                          #start NewStart
-                                          ./NewStart
-                                        </code></pre>
+  echo "Installing git"
+  sleep 2
+  #Install git 
+  sudo apt-get install git
+
+  echo "######################################"
+  
+  echo "downloading NewstartMint"
+  sleep 2
+  #clone the repository
+  git clone https://github.com/ReboOnline/NewstartMint.git
+
+  echo "######################################"
+  
+  echo "Enter the new folder NewstartMint"
+  sleep 2
+  #Enter the new folder NewstartMint
+  cd NewstartMint
+
+  echo "######################################"
+  
+  echo "making NewStart executable"
+  sleep 2
+  #making NewStart executable
+  chmod +x NewStart
+
+  echo "######################################"
+  
+  echo "Starting te file Newsart to begin"
+  sleep 2
+  #start NewStart
+  ./NewStart
+</code></pre>
                                         <br>
                                   </dd>
 
