@@ -495,8 +495,10 @@ div.desc {
 /* <!-- StickyButton --> */
 div.fixed {
   position: fixed;
-  top: 24%;
-  right: 5%;
+  /* top: 24%; */
+  /* right: 5%; */
+  right: 0%;
+  bottom: 0%;
   width: 100px;
   background: rgba(255, 255, 255, 0.025);
   border-radius: 10px;
