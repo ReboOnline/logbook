@@ -8,16 +8,15 @@
     <link rel="stylesheet" href="../../css/style.css">
     <meta name='author' content='The World of Rebo'>
 
-    <title>New page</title>
+    <title>Reboot Linux</title>
 </head>
 <body>
   <div class="wrapper">
-
-    <!-- Navigation -->
+<!-- Navigation -->
 <nav class="main-nav">
   <ul>
     <li>
-      <a href="../../index.html">Home</a>
+      <a href="../../index.html">Home Online</a>
     </li>
     <li>
       <a href="index-mint.html">Linux Mint</a>
@@ -37,7 +36,7 @@
       <div>
 <!-- StickyButton -->
 <div class="fixed">  
-  <a href="#"><span style='color: var(--blue);'>Top</span></a>
+  <a href="reboot.html"><span style='color: var(--blue);'>Top</span></a>
   </div>
 <!-- StickyButton -->
 
@@ -49,21 +48,53 @@
                     <sup> = kleine boven text -->
 <!--Hieronder een snippet 'colorvak' met strongBR, li-strong, dd-strong, codeblue, aReboBlue, 
 imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
- 
-<code><span style='color: var(--dark);'> <span style='color: var(--blue);'>Last edit:</span></code>
+<code><span style='color: var(--dark);'> <span style='color: var(--blue);'><a class='Body-Link' href='../Bash/index_Bash.html'>Home Bash</a></span></code>
+<code><span style='color: var(--dark);'> <span style='color: var(--blue);'><a class='Body-Link' href='index-mint.html'>Home Mint</a></span></code>
 <br>
 <br>
-<h1></h1>
-<dd><strong></strong><br>
-  <img src="../../Media/underconstruction.jpg" alt="underconstruction">
+<h1>Reboot Linux via the terminal 1:</h1>
+<dd><strong>A simple bash script that can be used to update Linux:</strong><br>
+  &#8195;First make a file with the name "<span style='color: var(--blue);'>reboot</span>"
+<br>
+
+  <span style='color: var(--green);'>
+<xmp>
+  #!/bin/bash
+  echo ""
+  sleep 2
+  echo "The computer wil Reboot now"
+  sleep 1
+  echo "Until we meet again"
+  sleep 1
+  clear ##-----clear the terminal-----##
+  reboot
+</xmp></span>
+
+<br>
+<strong>Make the script executable:</strong><br>
+To make a bash script executable, you need to set the appropriate permissions on the file. <br>
+You can do this using the chmod command. <br>
+This will give the file execute permission for the owner of the file.
+<span style='color: var(--green);'>
+<xmp>
+  chmod +x reboot
+</xmp></span>
+<br>
+
+
+<strong>Copy the file to the <span style='color: var(--blue);'>/usr/local/bin</span> folder:</strong> <br>
+This way you can use the command "<span style='color: var(--blue);'>up</span>" annywhere in a terminal. 
+Use the the code below in the terminal. <br>
+<span style='color: var(--green);'>
+<xmp>
+sudo cp reboot /usr/local/bin
+</xmp></span>
+
+
 
 </dd>
 <br>
 <hr>
-<br>
-
-<!--Hieronder een snippet 'colorvak' met strongBR, li-strong, dd-strong, codeblue, aReboBlue,
-imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
 
 
 
@@ -82,7 +113,6 @@ imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
 
     <!-- Footer -->
     <footer>
-      <!-- <a href="../../index.html"><span style='color: var(--blue);'>Home</span></a> -->
       <code><span style='color: var(--dark);'> <span style='color: var(--blue);'> <a class='Body-Link' href='../../index.html'>Home</a> </span></code>
     </footer>
     <!-- Footer -->
