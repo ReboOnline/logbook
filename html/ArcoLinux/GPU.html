@@ -56,8 +56,13 @@ imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
 <h1>Check your GPU</h1>
 <dd><strong>Check which GPU your PC is running</strong><br>
 
-  This command will display information about your graphics card(s). It uses lspci to list all PCI devices and grep to filter the output for the VGA controller. <br>
-  The -A 2 option tells grep to include two lines of context after the match, which will show additional information about the graphics card.
+  The command below will display information about the graphics card(s). <br>
+  It uses <strong>lspci</strong> to list all PCI devices and <strong>grep</strong> to filter the output for the VGA controller. <br>
+  The <strong>-A 2</strong> option tells grep to include two lines of context after the match, which will show additional information about the graphics card. <br>
+<br>
+  Copy and paste the following command in the terminal: <br>
+  <span style='color: var(--blue);'>lspci -k | grep -A 2 -i "VGA"
+  </span>
 
 
 </dd>
