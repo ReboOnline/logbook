@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Notes and more">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <meta name='author' content='The World of Rebo'>
+
+    <title>CSS Styles for mobile devices</title>
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- Navigation -->
+<nav class="main-nav">
+  <ul>
+    <li>
+      <a href="../../index.html">Home</a>
+    </li>
+    <li>
+      <a href="index-mint.html">Linux Mint</a>
+    </li>
+    <li>
+      <a href="html/ArcoLinux/arcolinuxmain.html">ArcoMain</a>
+    </li>
+   <li>
+      <a href="#Read"><span style='color: var(--red);'>Read me first</span></a>
+    </li>
+  </ul>
+</nav>
+<!-- Navigation -->
+
+    <!-- Info Section één_block -->
+    <section class="info">
+      <div>
+<!-- StickyButton -->
+<div class="fixed">  
+  <a href="#"><span style='color: var(--blue);'>Top</span></a>
+  </div>
+<!-- StickyButton -->
+
+               <!-- <b> = bold text
+                    <i> = italic text
+                    <del> =  doorgestreept
+                    <ins> = onderstreept
+                    <mark> = geel markeer
+                    <sup> = kleine boven text -->
+<!--Hieronder een snippet 'colorvak' met strongBR, li-strong, dd-strong, codeblue, aReboBlue, 
+imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
+ 
+<code><span style='color: var(--dark);'> <span style='color: var(--blue);'>16-06-2023</span></code>
+<br>
+<br>
+<h1></h1>
+<dd><strong>De lege CSS</strong><br>
+ <span style='color: var(--blue);'><xmp>
+  /* Styles for mobile devices */
+
+  @media (max-width: 767px) {
+  
+    /* CSS rules for mobile devices (less than or equal to 767px) */
+  
+  }
+</xmp></span>
+
+<br>
+<hr class='dashed'>
+<br>
+
+<span style='color: var(--blue);'><xmp>
+  /* Styles for iPads */
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+  
+    /* CSS rules for iPads (between 768px and 1023px) */
+  
+  }
+  
+</xmp></span>
+
+<br>
+<hr class='dashed'>
+<br>
+   
+  <span style='color: var(--blue);'><xmp>
+    /* Styles for larger screens */
+  
+    @media (min-width: 1024px) {
+    
+      /* CSS rules for larger screens (greater than or equal to 1024px) */
+    
+    }
+  </xmp></span>
+
+  <br>
+  <hr class='dashed'>
+  <br>
+ 
+
+In het onderstaande voorbeeld is de eerste mediaquery gericht op apparaten met een maximale breedte van 767 pixels, wat doorgaans overeenkomt met mobiele apparaten. <br>
+De tweede mediaquery is gericht op apparaten met een minimale breedte van 768 pixels en een maximale breedte van 1023 pixels, waaronder over het algemeen iPads en andere tablets. <br>
+De derde mediaquery stijl heeft een minimale breedte van 1024 pixels, voor grotere schermen zoals desktops of laptops.<br>
+<br>
+In onderstaand voorbeeld heb ik je een "grid-layout" met drie kolommen gemaakt met behulp van grid-template-columns: 1fr 1fr 1fr;. Elk grid item heeft een achtergrondkleur en wat opvulling voor stylingdoeleinden.<br>
+Nu kun je voor alle mediaquery's op basis van de apparaat grootte de lay-out aanpassen: <br>
+<br>
+Voor mobiele apparaten met een maximale breedte van 767 pixels gebruik je grid-template-columns: 1fr; om de lay-out te wijzigen in een enkele kolom.<br>
+Voor iPads met een breedte tussen 768 en 1023 pixels gebruik je grid-template-columns: 1fr 1fr; om de lay-out te wijzigen in twee kolommen.<br>
+Voor grotere schermen met een minimale breedte van 1024 pixels gebruik je grid-template-columns: 1fr 1fr 1fr; om de originele lay-out met drie kolommen te behouden.<br>
+
+</dd>
+<br>
+<hr>
+<br>
+
+<!--Hieronder een snippet 'colorvak' met strongBR, li-strong, dd-strong, codeblue, aReboBlue,
+imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
+
+
+
+
+                 
+
+ 
+
+
+
+
+      </div>
+    </section>
+
+   
+
+    <!-- Footer -->
+    <footer>
+      <!-- <a href="../../index.html"><span style='color: var(--blue);'>Home</span></a> -->
+      <code><span style='color: var(--dark);'> <span style='color: var(--blue);'> <a class='Body-Link' href='../../index.html'>Home</a> </span></code>
+    </footer>
+    <!-- Footer -->
+
+  </div>
+  <!-- Wrapper Ends -->
+</body>
+</html>
