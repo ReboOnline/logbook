@@ -37,7 +37,7 @@
       <div>
 <!-- StickyButton -->
 <div class="fixed">  
-  <a href="#"><span style='color: var(--blue);'>Top</span></a>
+  <a href="CSS_mobile.html"><span style='color: var(--blue);'>Top</span></a>
   </div>
 <!-- StickyButton -->
 
@@ -53,8 +53,10 @@ imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
 <code><span style='color: var(--dark);'> <span style='color: var(--blue);'>16-06-2023</span></code>
 <br>
 <br>
-<h1></h1>
-<dd><strong>De lege CSS</strong><br>
+<h1>CSS Styles for mobile devices</h1>
+
+
+<dd><strong>The empty CSS</strong><br>
  <span style='color: var(--blue);'><xmp>
   /* Styles for mobile devices */
 
@@ -98,17 +100,81 @@ imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
   <hr class='dashed'>
   <br>
  
+<Strong>a mediaquery</Strong><br>
+In the example below, the first media query targets devices with a maximum width of 767 pixels, which typically corresponds to mobile devices. <br>
+You can add your CSS rules inside the corresponding block to style elements for mobile devices.<br>
+<br>
+The second media query targets devices with a minimum width of 768 pixels and a maximum width of 1023 pixels, which generally includes iPads and other tablets. <br>
+Again, place your CSS rules inside the block to style elements for iPads.<br>
+<br>
+And the third media query applies styles to devices with a minimum width of 1024 pixels, covering larger screens such as desktops or laptops.<br>
+<br>
+<hr class='dashed'>
+<br>
 
-In het onderstaande voorbeeld is de eerste mediaquery gericht op apparaten met een maximale breedte van 767 pixels, wat doorgaans overeenkomt met mobiele apparaten. <br>
-De tweede mediaquery is gericht op apparaten met een minimale breedte van 768 pixels en een maximale breedte van 1023 pixels, waaronder over het algemeen iPads en andere tablets. <br>
-De derde mediaquery stijl heeft een minimale breedte van 1024 pixels, voor grotere schermen zoals desktops of laptops.<br>
+<Strong>HTML</Strong>
+<span style='color: var(--blue);'><xmp>
+  <div class="grid-container">
+    <div class="grid-item">Item 1</div>
+    <div class="grid-item">Item 2</div>
+    <div class="grid-item">Item 3</div>
+  </div>  
+</xmp></span>
 <br>
-In onderstaand voorbeeld heb ik je een "grid-layout" met drie kolommen gemaakt met behulp van grid-template-columns: 1fr 1fr 1fr;. Elk grid item heeft een achtergrondkleur en wat opvulling voor stylingdoeleinden.<br>
-Nu kun je voor alle mediaquery's op basis van de apparaat grootte de lay-out aanpassen: <br>
+<hr class='dashed'>
 <br>
-Voor mobiele apparaten met een maximale breedte van 767 pixels gebruik je grid-template-columns: 1fr; om de lay-out te wijzigen in een enkele kolom.<br>
-Voor iPads met een breedte tussen 768 en 1023 pixels gebruik je grid-template-columns: 1fr 1fr; om de lay-out te wijzigen in twee kolommen.<br>
-Voor grotere schermen met een minimale breedte van 1024 pixels gebruik je grid-template-columns: 1fr 1fr 1fr; om de originele lay-out met drie kolommen te behouden.<br>
+<strong>CSS</strong>
+<span style='color: var(--blue);'><xmp>
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+  
+  .grid-item {
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 767px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Media query for iPads */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .grid-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Media query for larger screens */
+  @media (min-width: 1024px) {
+    .grid-container {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }  
+</xmp></span>
+
+<br>
+<hr class='dashed'>
+<br>
+
+In the example above, we have a grid layout with three columns defined using grid-template-columns: 1fr 1fr 1fr;. <br>
+Each grid item has a background color and some padding for styling purposes.<br>
+<br>
+Then, we apply media queries to adjust the number of columns based on the device size:<br>
+<br>
+    For mobile devices with a maximum width of 767 pixels, we use grid-template-columns: 1fr; to change the layout to a single column.<br>
+    <br>
+    For iPads with a width between 768 and 1023 pixels, we use grid-template-columns: 1fr 1fr; to change the layout to two columns.<br>
+    <br>
+    For larger screens with a minimum width of 1024 pixels, we use grid-template-columns: 1fr 1fr 1fr; to keep the original three-column layout.<br>
+    <br>
+You can customize the grid layout, the number of columns, and the styles within each media query block to suit your specific design requirements.<br>
 
 </dd>
 <br>
