@@ -100,7 +100,7 @@ imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
   <hr class='dashed'>
   <br>
  
-<Strong>a mediaquery</Strong><br>
+<!-- <Strong>a mediaquery</Strong><br>
 In the example below, the first media query targets devices with a maximum width of 767 pixels, which typically corresponds to mobile devices. <br>
 You can add your CSS rules inside the corresponding block to style elements for mobile devices.<br>
 <br>
@@ -108,7 +108,18 @@ The second media query targets devices with a minimum width of 768 pixels and a 
 Again, place your CSS rules inside the block to style elements for iPads.<br>
 <br>
 And the third media query applies styles to devices with a minimum width of 1024 pixels, covering larger screens such as desktops or laptops.<br>
+<br> -->
+
+In the example ablow, we have a grid layout with three columns defined using grid-template-columns: 1fr 1fr 1fr;. <br>
+Each grid item has a background color and some padding for styling purposes.<br>
 <br>
+Apply media queries to adjust the number of columns based on the device size:<br>
+<br>
+&#8195; &#8195; For mobile devices with a maximum width of 767 pixels, we use grid-template-columns: 1fr; to change the layout to a single column.<br>
+&#8195; &#8195; For iPads with a width between 768 and 1023 pixels, we use grid-template-columns: 1fr 1fr; to change the layout to two columns.<br>
+&#8195; &#8195; For larger screens with a minimum width of 1024 pixels, we use grid-template-columns: 1fr 1fr 1fr; to keep the original three-column layout.<br>
+<br>   
+Customize the grid layout, the number of columns, and the styles within each media query block to suit your specific design requirements.<br>
 <hr class='dashed'>
 <br>
 
@@ -163,18 +174,7 @@ And the third media query applies styles to devices with a minimum width of 1024
 <hr class='dashed'>
 <br>
 
-In the example above, we have a grid layout with three columns defined using grid-template-columns: 1fr 1fr 1fr;. <br>
-Each grid item has a background color and some padding for styling purposes.<br>
-<br>
-Then, we apply media queries to adjust the number of columns based on the device size:<br>
-<br>
-    For mobile devices with a maximum width of 767 pixels, we use grid-template-columns: 1fr; to change the layout to a single column.<br>
-    <br>
-    For iPads with a width between 768 and 1023 pixels, we use grid-template-columns: 1fr 1fr; to change the layout to two columns.<br>
-    <br>
-    For larger screens with a minimum width of 1024 pixels, we use grid-template-columns: 1fr 1fr 1fr; to keep the original three-column layout.<br>
-    <br>
-You can customize the grid layout, the number of columns, and the styles within each media query block to suit your specific design requirements.<br>
+
 
 </dd>
 <br>
