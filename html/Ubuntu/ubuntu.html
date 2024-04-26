@@ -7,89 +7,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/style.css">
     <meta name='author' content='The World of Rebo'>
-
-    <title>Ubuntu</title>
+    <title>Ubuntu New</title>
 </head>
 <body>
   <div class="wrapper">
-    <!-- Navigation -->
-    <nav class="main-nav">
-      <ul>
-        <li>
-          <a href="../../index.html">Home</a>
-        </li>
-        <li>
-            <a href="arcolinuxmain.html">ArcoMain</a>
-        </li>
-       <li>
-        <a href="../../index.html#Read"><span style='color: var(--red);'>Read me first</span></a>
-        </li>
-      </ul>
-    </nav>
-    <!-- Navigation -->
 
-    <!-- Info Section één_block -->
+
+
+    <!-- Info Section -->
     <section class="info">
       <div>
-<a href='#' class='top-button'>Na de Installatie van ubuntu 20.04</a>
 
-                    <!--
-                    <b> = bold text
+<!-- StickyButton -->
+<div class="fixed">  
+  <a href="Q-meeting.html"><span style='color: var(--blue);'>back to the top</span></a>
+  </div>
+<!-- StickyButton -->
+
+<H1>Ubuntu after install</H1>
+<hr>
+<br>
+
+               <!-- <b> = bold text
                     <i> = italic text
-                    <del> = doorgestreept
+                    <del> =  doorgestreept
                     <ins> = onderstreept
-                    <span style='color: var(--blue);'>#</span>  -->
- 
+                    <mark> = geel markeer
+                    <sup> = kleine boven text -->
+<!--Hieronder een snippet 'qcolorvak' met dd, dd-strong, codeblue, imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
 
- <!-- table comment Rebo -->
- <table class="content-table">
-   <thead>
-     <tr class="active-row">
-       <th>Werkwijze --- </th>
-     </tr>
-   </thead>
-   <tbody>
+<!-- <h5>19-05-2021</h5> -->
+<code><span style='color: var(--dark);'> <span style='color: var(--blue);'>19-05-2021</span></code>
+        <h3>Update, upgrade and clean up:</h3>
+        <dd>Kopieer en plak in de terminal:</dd>
+        <dd><span style='color: var(--blue);'>sudo apt update -y && sudo apt upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y </span></dd>
+        <hr>
 <!-- Hieronder een snippet "TR1" met dd, dd-bleu, ulli, olli, spanColor1 -->
-<tr>
-    <td>
-<h5>19-05-2021</h5>
-        <h3>Update & Upgrade:</h3>
-        <dd>Kopieer en plak in de terminal</dd>
-        <dd><span style='color: var(--blue);'>sudo apt update; sudo apt upgrade</span> (Deze moet je onder de installatie bevestigen met Y.)</dd>
-        <dd>Of</dd>
-        <dd><span style='color: var(--blue);'>sudo apt update && sudo apt upgrade -y</span> (Deze laat je installeren zonder Y door gaan.)</dd>
-        </td>
-</tr>
-<!-- Hieronder een snippet "TR1" met dd, dd-bleu, ulli, olli, spanColor1 -->
-<tr>
-  <td>
-    <h3>Swappiness:</h3>
-    <h4>How to check swappiness:</h4>
-    <dd>Kopieer en plak in de terminal om de swappiness te controleren </dd>
+
+    <h3>Reduce swappiness:</h3>
+    <dd><strong>Eerst de swappiness waarde controleren.</strong> <br>
+      Druk op Ctrl + Alt + T om een nieuw terminalvenster te openen. <br>
+      Voer het volgende commando uit in de terminal om de huidige swappiness-waarde te controleren: <br>
+      <span style='color: var(--blue);'>cat /proc/sys/vm/swappiness</span> <br>
+      Dit zal een getal tonen tussen 0 en 100. Het standaardwaarde is meestal 60.  <br>
+      <br>
+      <strong>Swappiness-waarde wijzigen</strong> <br>
+      <span style='color: var(--blue);'>sudo nano /etc/sysctl.conf</span> <br>
+      <br>
+      <strong>Voeg de volgende regel toe aan het einde van het bestand:</strong> <br>
+      <span style='color: var(--blue);'>vm.swappiness=10</span> <br>
+      (bij een SSD kan het zelfs naar 1 terug) <br>
+      Sla het bestand op en sluit de teksteditor. <br>
+      <br>
+      <strong>Laad de nieuwe instellingen in</strong> <br>
+      Om de nieuwe instellingen toe te passen zonder opnieuw op te starten, voer je het volgende commando uit: <br>
+      <span style='color: var(--blue);'>sudo sysctl -p</span> <br>
+      <br>
+      Controleer nogmaals of het is gelukt <br>
+      <span style='color: var(--blue);'>cat /proc/sys/vm/swappiness</span>
+
+
+    </dd>
+    <!-- <dd>Kopieer en plak in de terminal om de swappiness te controleren </dd>
     <dd><span style='color: var(--blue);'><i>sysctl vm.swappiness</i></span> of <span style='color: var(--blue);'><i>cat /proc/sys/vm/swappiness</i></span></dd>
-    <dd>Meestal is dit 60 en dit gaan we naar 10 terug zetten</dd>
+    <dd>Meestal is dit 60, dit kan op een HHD op 10, op een SSD kan dit op 0 terug gezet worden.</dd>
     <h4>TO SET SWAPPINESS:</h4>
     <dd>Open een terminal en type of kopieer en plak</dd>
     <dd><span style='color: var(--blue);'>sudo nano /etc/sysctl.conf</span></dd>
     <dd>In de volgende de popup ga je met de pijltjestoets helemaal naar onderen en voeg je <span style='color: var(--blue);'>vm.swappiness = 10</span> toe <br>
     en sla het bestand met <span style='color: var(--blue);'>CTRL o</span> en dan <span style='color: var(--blue);'>Enter</span> om te bevestigen.</dd>
-    <dd>Sluit het bestand nu met <span style='color: var(--blue);'>CTRL x</span></dd>
-    </td>
-</tr>
+    <dd>Sluit het bestand nu met <span style='color: var(--blue);'>CTRL x</span></dd> -->
+      <br>
+      <strong>Hier een bash.sh</strong> <br>
+      Dit script detecteert automatisch het type opslagmedium (HDD, SSD, of M.2) en stelt de swappiness-waarde in. <br>
+      <pre><code>
+        <span style='color: var(--blue);'>
+      <xmp>
+        #!/bin/bash
+
+        # Bepaal het type opslagmedium
+        storage_type=$(lsblk -o name,tran | grep -i 'sd\|nvme' | grep -oE 'ssd|nvme|hdd' | head -n1)
+        
+        # Stel de swappiness-waarde in op basis van het type opslagmedium
+        case "$storage_type" in
+            "hdd")
+                swappiness_value=60
+                ;;
+            "ssd"|"nvme")
+                swappiness_value=10
+                ;;
+            *)
+                echo "Opslagmedium niet herkend. Standaardinstellingen worden gebruikt."
+                swappiness_value=60
+                ;;
+        esac
+        
+        # Verlaag de swappiness-waarde
+        echo "Verlagen van swappiness-waarde naar $swappiness_value..."
+        sudo sysctl vm.swappiness=$swappiness_value
+        
+        # Controleer of de wijziging is doorgevoerd
+        echo "Controleren of de swappiness-waarde is verlaagd..."
+        current_swappiness=$(cat /proc/sys/vm/swappiness)
+        if [ "$current_swappiness" -eq $swappiness_value ]; then
+            echo "Swappiness-waarde is succesvol verlaagd naar $swappiness_value."
+        else
+            echo "Er is een probleem opgetreden bij het verlagen van de swappiness-waarde."
+        fi
+        
+        # Maak de wijziging permanent
+        echo "De nieuwe instellingen permanent maken..."
+        echo "vm.swappiness=$swappiness_value" | sudo tee -a /etc/sysctl.conf > /dev/null
+        
+        # Laden van nieuwe instellingen
+        echo "Nieuwe instellingen toepassen..."
+        sudo sysctl -p
+        
+        # Opnieuw controleren of de wijziging permanent is
+        echo "Opnieuw controleren van de swappiness-waarde..."
+        current_swappiness=$(cat /proc/sys/vm/swappiness)
+        if [ "$current_swappiness" -eq $swappiness_value ]; then
+            echo "Swappiness-waarde is permanent ingesteld op $swappiness_value."
+        else
+            echo "Er is een probleem opgetreden bij het permanent instellen van de swappiness-waarde."
+        fi
+        
+      </xmp>
+      </span>
+      </code></pre>
+    <hr>
 <!-- Hieronder een snippet 'TR1' met dd, dd-bleu, ulli, olli, spanColor1 -->
-<tr>
-  <td>
+
     <h3>SET WRITE CACHING:</h3>
     <dd>Open een terminal en type <span style='color: var(--blue);'>gnome-disks</span> om "Disks" te openen</dd>
     <dd>Klik <span style='color: var(--blue);'>'Drive Settings'</span> in menu.</dd>
     <dd>Set <span style='color: var(--blue);'>'Write Cache'</span> op <span style='color: var(--blue);'>On</span>.</dd>
     <br>
     <dd><b>Herstart de computer</b></dd>
-    </td>
-</tr>
+    <hr>
 <!-- Hieronder een snippet 'TR1' met dd, dd-bleu, ulli, olli, spanColor1 -->
-<tr>
-  <td>
+
     <h3>How to customize dock panel on Ubuntu 20.04</h3>
     <dd><b>Aanpassen via dconf-editor</b></dd>
     <dd><span style='color: var(--blue);'>sudo apt install dconf-editor</span></dd>
@@ -102,14 +159,11 @@
       $ gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false <br>
       $ gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM <br>
       $ gsettings set org.gnome.shell.extensions.dash-to-dock transparency-mode FIXED <br>
-      $ gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 64 <br>
+      $ gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 26 <br>
       $ gsettings set org.gnome.shell.extensions.dash-to-dock unity-backlit-items true
     </span></dd>
-    </td>
-</tr>
+    <hr>
 <!-- Hieronder een snippet 'TR1' met dd, dd-bleu, ulli, olli, spanColor1 -->
-<tr>
-  <td>
 
     <h3>Adjust Top Bar <a href="https://youtu.be/8XZ2CmaLImY" target="_blank" rel="YouTube">YouTube</a></h3>
     <br>
@@ -147,12 +201,9 @@
      <dd>10 - Type in de terminal <span style='color: var(--blue);'>sudo install gnome-tweaks</span> </dd>
      <dd>11 - Open de app <span style='color: var(--blue);'>Tweaks - Extentions - </span>enable <span style='color: var(--blue);'>"User themes"</span></dd>
      <dd>Ga dan naar tabblad <span style='color: var(--blue);'>Appearance</span> bij shell en selecteer de theme <span style='color: var(--blue);'>mytheme</span></dd>
-    </td>
-</tr>
+     <hr>
 <!-- Hieronder een snippet 'TR1' met dd, dd-bleu, ulli, olli, spanColor1 -->
-<tr>
-  <td>
-<h5>https://youtu.be/DyNLXIV9GbM</h5>
+<!-- <h5>https://youtu.be/DyNLXIV9GbM</h5> -->
     <h3>Install Bpytop in Ubuntu 20.04</h3>
     <dd>kopieer en plak 1 voor 1 in de terminal</dd>
     <br>
@@ -172,35 +223,26 @@
     <h3>Remove bpytop</h3>
     <dd>kopieer en plak in de terminal</dd>
     <dd><span style='color: var(--blue);'>sudo snap remove bpytop</span></dd>
-
-    </td>
-</tr>
+    <hr>
 <!-- Hieronder een snippet 'TR1' met dd, dd-bleu, ulli, olli, spanColor1 -->
-<tr>
-    <td>
+
         <h3>Install Favorite Apps:</h3>
         <dd>Kopieer en plak in de terminal</dd>
         <dd style='color: var(--blue)'><i>sudo apt install vlc gimp gparted synaptic neofetch timeshift bleachbit gnome-tweaks dconf-editor plank preload variety kodi -y</i></dd>
-        </td>
-</tr>
+        <hr>
 <!-- Hieronder een snippet "TR1" met dd, dd-bleu, ulli, olli, spanColor1 -->
-<tr>
-    <td>
+
         <h3>Install Ubuntu Restricted Extras (Media Codecs):</h3>
         <dd>Kopieer en plak in de terminal</dd>
         <dd style='color: var(--blue)'><i>sudo apt install ubuntu-restricted-extras</i></dd>
-        </td>
-</tr>
+        <hr>
 <!-- Hieronder een snippet "TR1" met dd, dd-bleu, ulli, olli, spanColor1 -->
-<tr>
-    <td>
+
         <h3>Handleiding Timeshift Backup Tool:</h3>
         <dd> vind je hier <a href="https://www.youtube.com/watch?v=ifvcrsnBAp4" target="_blank" rel="Timeshift Backup Tool">https://www.youtube.com/watch?v=ifvcrsnBAp4</a> </dd>
-        </td>
-</tr>
+        <hr>
 <!-- Hieronder een snippet 'TR1' met dd, dd-bleu, ulli, olli, spanColor1 -->
-<tr>
-    <td>
+
         <h3>Install Preload:</h3>
         <dd style='color: var(--blue)'><i>sudo apt install preload</i></dd>
         <br>
@@ -213,19 +255,15 @@
             <dd style='color: var(--blue)'><i>/usr/share/gopreload/enabled</i></dd>
             <dd>Or move it to</dd>
             <dd style='color: var(--blue)'><i>/usr/share/gopreload/disabled.</i></dd></dd>
-        </td>
-</tr>
+            <hr>
 <!-- Hieronder een snippet 'TR1' met dd, dd-bleu, ulli, olli, spanColor1 -->
-<tr>
-    <td>
+
         <h3>Bleachbit: een programma om eens pre maand Linux op te schonen</h3>
         <dd>Kopieer en plak in de terminal</dd>
         <dd style='color: var(--blue)'><i>sudo apt install bleachbit</i></dd>
-        </td>
-</tr>
+        <hr>
 <!-- Hieronder een snippet 'TR1' met dd, dd-bleu, ulli, olli, spanColor1 -->
-<tr>
-  <td>
+
     <h3>Instal Plank via software centre</h3>
     <dd>zet Plank in autostart</dd>
     <dd>Open een text editor en kopieer en plak</dd>
@@ -246,11 +284,9 @@
     <dd>Sla het bestand op in <span style='color: var(--blue);'>Home/.config/autostart</span> en noem het bestand <span style='color: var(--blue);'>plank.desktop</span></dd>
     <br>
     <dd><span style='color: var(--blue);'>.config</span> vind je door in de home folder op <span style='color: var(--blue);'>CTRL + h</span> te klikken</dd>
-    </td>
-</tr>
+    <hr>
 <!-- Hieronder een snippet 'TR1' met dd, dd-bleu, ulli, olli, spanColor1 -->
-<tr>
-  <td>
+
     <h3>Install uCareSystem Core</h3>
     <dd><span style='color: var(--blue);'>sudo add-apt-repository ppa:utappia/stable</span></dd>
     <dd><span style='color: var(--blue);'>sudo apt-get update</span></dd>
@@ -268,37 +304,12 @@
     <br>
     <dd>run the following command to see the list of available parameters.</dd>
     <dd><span style='color: var(--blue);'>sudo ucaresystem-core -h</span></dd>
-    </td>
-</tr>
+ <hr>
 <!-- Hieronder een snippet 'TR1' met dd, dd-bleu, ulli, olli, spanColor1 -->
-
- 
-   </tbody>
-   </table>
- <!-- table comment Rebo -->
+        
 
 
 
-
-
-                 
-
- 
-
-
-
-      <a href="#" class="button">Back to top</a>
-      </div>
-    </section>
-
-<!-- Info Section één_block -->
-
-   
-
-    <!-- Footer -->
-    <footer>
-      <p>The World of Rebo &copy; 2020</p><a href="#" class="button">Home</a>
-    </footer>
 
   </div>
   <!-- Wrapper Ends -->
