@@ -430,19 +430,6 @@ footer {
 
 /* Begin NaamVak */
 
-code {
-  background: rgba(255, 255, 255, 0.025);
-  border-radius: 10px;
-  border: solid 2px rgba(255, 255, 255, 0.125);
-  border-color: var(--dark);
-  box-shadow: Var(--shadow);
-  font-family: "Courier New", monospace;
-  font-size: 0.9em;
-  margin: 0 0.25em;
-  padding: 0.25em 0.65em;
-  /* <code>Voorbeeld-text</code> */
-}
-
 pre code {
   display: block;
   line-height: 1.75em;
@@ -533,11 +520,16 @@ code {
   background-color: var(---mydark); /* Achtergrondkleur van het codevak */
   border: 1px solid var(---mydark); /* Rand rondom het codevak */
   border-radius: 5px; /* Afronding van de randen */
+  border-color: var(--dark);
+  box-shadow: Var(--shadow);
   font-family: Consolas, Monaco, 'Courier New', Courier, monospace; /* Lettertype voor de code */
   font-size: 14px; /* Grootte van de tekst */
   line-height: 1.5; /* Regelhoogte */
   overflow: auto; /* Om verticale scroll toe te voegen als de code te lang is */
   max-width: 100%; /* Om ervoor te zorgen dat de code niet breder wordt dan het scherm */
+  font-size: 0.9em;
+  margin: 0 0.25em;
+  padding: 0.25em 0.65em;
 }
 
 /* Code container resposief */
