@@ -57,7 +57,11 @@ imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
 
 
 <dd><strong>The empty CSS</strong><br>
- <span style='color: var(--blue);'><xmp>
+  Onderstaande media stijlen kun je gebruiken voor verschillende schermmaten
+<div class='code-container'>
+<pre>
+<code>
+<span style='color: var(--blue);'><xmp>
   /* Styles for mobile devices */
 
   @media (max-width: 767px) {
@@ -66,11 +70,17 @@ imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
   
   }
 </xmp></span>
+</code>
+</pre>
+</div>
 
 <br>
-<hr class='dashed'>
+<hr>
 <br>
 
+<div class='code-container'>
+<pre>
+<code>
 <span style='color: var(--blue);'><xmp>
   /* Styles for iPads */
   
@@ -79,36 +89,34 @@ imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
     /* CSS rules for iPads (between 768px and 1023px) */
   
   }
-  
 </xmp></span>
+</code>
+</pre>
+</div>
 
 <br>
-<hr class='dashed'>
+<hr>
 <br>
    
-  <span style='color: var(--blue);'><xmp>
-    /* Styles for larger screens */
+<div class='code-container'>
+<pre>
+<code>
+<span style='color: var(--blue);'><xmp>
+  /* Styles for larger screens */
   
-    @media (min-width: 1024px) {
-    
-      /* CSS rules for larger screens (greater than or equal to 1024px) */
-    
-    }
-  </xmp></span>
+  @media (min-width: 1024px) {
+  
+    /* CSS rules for larger screens (greater than or equal to 1024px) */
+  
+  }
+</xmp></span>
+</code>
+</pre>
+</div>
 
   <br>
-  <hr class='dashed'>
+  <hr>
   <br>
- 
-<!-- <Strong>a mediaquery</Strong><br>
-In the example below, the first media query targets devices with a maximum width of 767 pixels, which typically corresponds to mobile devices. <br>
-You can add your CSS rules inside the corresponding block to style elements for mobile devices.<br>
-<br>
-The second media query targets devices with a minimum width of 768 pixels and a maximum width of 1023 pixels, which generally includes iPads and other tablets. <br>
-Again, place your CSS rules inside the block to style elements for iPads.<br>
-<br>
-And the third media query applies styles to devices with a minimum width of 1024 pixels, covering larger screens such as desktops or laptops.<br>
-<br> -->
 
 In the example ablow, we have a grid layout with three columns defined using grid-template-columns: 1fr 1fr 1fr;. <br>
 Each grid item has a background color and some padding for styling purposes.<br>
