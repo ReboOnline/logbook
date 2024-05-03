@@ -9,6 +9,7 @@
     <meta name='author' content='The World of Rebo'>
 
     <title>CleanUp Linux Mint</title>
+    <link rel="icon" type="image/x-icon" href="../../Media/ico/RB.ico">
 </head>
 <body>
   <div class="wrapper">
@@ -57,66 +58,74 @@ imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
 <dd><strong>There are several ways to clean up a Linux Mint system via the terminal:</strong><br>
   <ol>
   <li>Remove unnecessary or unused packages: You can use the apt-get command to remove unnecessary or unused packages. <br> </li>
-      <span style='color: var(--blue);'>sudo apt-get autoremove</span>
+      <!-- <span style='color: var(--blue);'>sudo apt-get autoremove</span> -->
+      <xmp id="copyText1" style="display: none;">sudo apt-get autoremove</xmp> <button class="copyBtn" id="copyBtn1"></button>
       <br>
       <br>
       <li>Clear the package cache: The package manager keeps copies of all downloaded packages in a cache, which can take up a lot of disk space over time. You can clear the cache by running: <br></li>
-      <span style='color: var(--blue);'>sudo apt-get clean</span>
+      <!-- <span style='color: var(--blue);'>sudo apt-get clean</span> -->
+      <xmp id="copyText2" style="display: none;">sudo apt-get clean</xmp> <button class="copyBtn" id="copyBtn2"></button>
       <br>
       <br>
       <li>Remove old kernels: Linux Mint keeps multiple kernels as a fallback in case something goes wrong with a new kernel update. However, these old kernels can take up a lot of space. You can remove old kernels using the "<i>purge-old-kernels</i>" script: <br></li>
-      <span style='color: var(--blue);'>sudo apt-get purge-old-kernels</span>
+      <!-- <span style='color: var(--blue);'>sudo apt-get purge-old-kernels</span> -->
+      <xmp id="copyText3" style="display: none;">sudo apt-get purge-old-kernels</xmp> <button class="copyBtn" id="copyBtn3"></button>
       <br>
       <br>
       <li>Remove temporary files: Temporary files, such as those created by the system or by applications, can accumulate over time and take up a lot of space. You can use the tmpreaper utility to remove these files: <br></li>
-      <span style='color: var(--blue);'>sudo tmpreaper</span>
+      <!-- <span style='color: var(--blue);'>sudo tmpreaper</span> -->
+      <xmp id="copyText4" style="display: none;">sudo tmpreaper</xmp> <button class="copyBtn" id="copyBtn4"></button>
       <br>
       <br>
       <li>Compact the filesystem: If you have a lot of small files on your system, they can cause the filesystem to become fragmented, which can lead to slower performance. You can use the e4defrag utility to compact the filesystem: <br></li>
-      <span style='color: var(--blue);'>sudo e4defrag /</span>
+      <!-- <span style='color: var(--blue);'>sudo e4defrag /</span> -->
+        <xmp id="copyText5" style="display: none;">sudo e4defrag /</xmp> <button class="copyBtn" id="copyBtn5"></button>
       <br>
       <br>
       <li>Remove log files: Log files can also accumulate over time and take up a lot of space. You can use the logrotate utility to remove old log files: <br></li>
-      <span style='color: var(--blue);'>sudo logrotate -f /etc/logrotate.conf</span>
+      <!-- <span style='color: var(--blue);'>sudo logrotate -f /etc/logrotate.conf</span> -->
+      <xmp id="copyText6" style="display: none;">sudo logrotate -f /etc/logrotate.conf</xmp> <button class="copyBtn" id="copyBtn6"></button>
   </ol>
 <br>
 
 <strong>Here is a script that combines the examples I provided above into a single script:</strong><br>
 <br>
+<xmp id="copyText7" style="display: none;">
+  #!/bin/bash
 
-<pre><code>
-#!/bin/bash
-
-# Remove unnecessary or unused packages
-sudo apt-get autoremove
-  
-# Clear the package cache
-sudo apt-get clean
-  
-# Remove old kernels
-sudo apt-get purge-old-kernels
-  
-# Remove temporary files
-sudo tmpreaper
-  
-# Compact the filesystem
-sudo e4defrag /
-  
-# Remove log files
-sudo logrotate -f /etc/logrotate.conf
-</code></pre>
+  # Remove unnecessary or unused packages
+  sudo apt-get autoremove
+    
+  # Clear the package cache
+  sudo apt-get clean
+    
+  # Remove old kernels
+  sudo apt-get purge-old-kernels
+    
+  # Remove temporary files
+  sudo tmpreaper
+    
+  # Compact the filesystem
+  sudo e4defrag /
+    
+  # Remove log files
+  sudo logrotate -f /etc/logrotate.conf
+</xmp> <button class="copyBtn" id="copyBtn7"></button>
 <br>
 <ol>
   <li>To use this script name it cleanup.sh save it and make it executable with the following command: <br></li>
-  <span style='color: var(--blue);'>chmod +x cleanup.sh</span>
+  <!-- <span style='color: var(--blue);'>chmod +x cleanup.sh</span> -->
+  <xmp id="copyText8" style="display: none;">chmod +x cleanup.sh</xmp> <button class="copyBtn" id="copyBtn8"></button>
   <br>
   <br>
   <li>To run the script open an terminal in the same direcrory where you have saved the file and type: <br></li>
-  <span style='color: var(--blue);'>./cleanup.sh</span>
+  <!-- <span style='color: var(--blue);'>./cleanup.sh</span> -->
+  <xmp id="copyText9" style="display: none;">./cleanup.sh</xmp> <button class="copyBtn" id="copyBtn9"></button>
   <br>
   <br>
   <li>To run the script from anyware in the system in the terminal you have to copy the file to the right direcrory with the following command: <br></li>
-  <span style='color: var(--blue);'>sudo cp cleanup.sh /usr/local/bin</span> <br>
+  <xmp id="copyText10" style="display: none;">sudo cp cleanup.sh /usr/local/bin</xmp> <button class="copyBtn" id="copyBtn10"></button> <br>
+  <!-- <span style='color: var(--blue);'>sudo cp cleanup.sh /usr/local/bin</span> <br> -->
   <span style='color: var(--green);'>Note:</span> <i class="Note">Make sure you to open the terminal in de same direcrory where the file is saved</i class="Note">
   </ol>
 
@@ -152,5 +161,6 @@ imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
 
   </div>
   <!-- Wrapper Ends -->
+  <script src="../../js/script.js"></script>
 </body>
 </html>
