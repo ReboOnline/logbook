@@ -514,7 +514,7 @@ pre {
   white-space: pre-wrap; /* Om ervoor te zorgen dat de code wordt omgebroken op kleine schermen */
 }
 
-code {
+code-test {
   display: block; /* Om ervoor te zorgen dat de code wordt weergegeven als een blok */
   padding: 10px;
   background-color: var(---mydark); /* Achtergrondkleur van het codevak */
@@ -533,3 +533,27 @@ code {
 }
 
 /* Code container resposief */
+
+/* Copy code container */
+.copyBtn {
+  padding: 2px;
+  background-color: var(---mydark); /* Achtergrondkleur van het codevak */
+  color: var(--blue);
+  border: none;
+  border-radius: 5px;
+  border-color: var(--dark);
+  box-shadow: Var(--shadow);
+  cursor: pointer;
+  transition: all 0.3s;
+  white-space: pre-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left; /* Tekst links uitlijnen */
+  max-width: 100%;
+  margin-bottom: 2px;
+}
+.copyBtn:hover {
+  background-color: var(--blue);
+  color: var(--light);
+}
+/* Copy code container */
