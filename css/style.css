@@ -557,3 +557,37 @@ code-test {
   color: var(--light);
 }
 /* Copy code container */
+
+/* Stijlen voor de navigatieknop */
+.navButton {
+  padding: 2px;
+  background-color: var(---mydark); /* Achtergrondkleur van het codevak */
+  color: var(--blue);
+  border: none;
+  border-radius: 5px;
+  border-color: var(--dark);
+  box-shadow: Var(--shadow);
+  cursor: pointer;
+  transition: all 0.3s;
+  white-space: pre-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left; /* Tekst links uitlijnen */
+  max-width: 100%;
+  margin-bottom: 2px;
+  transition: background-color 0.3s;
+}
+
+.navButton:hover {
+  background-color: rgb(19, 152, 241, .3);
+  color: var(--light);
+}
+/* Stijlen voor de navigatieknop */
+
+/* Arrow rechts */
+.arrow {
+  max-width: 3em; /* Maximale breedte van 3 tekens */
+  overflow: hidden; /* Verbergt eventuele extra tekst */
+  white-space: nowrap; /* Voorkomt dat de tekst wordt gewrapt */
+}
+/* Arrow rechts */
