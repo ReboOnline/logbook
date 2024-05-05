@@ -559,7 +559,7 @@ code-test {
 }
 /* Copy code container */
 
-/* Stijlen voor de navigatieknop */
+/* Stijlen voor de navBTN */
 .navButton {
   display: inline-block; /* Veranderd naar inline-block */
   padding: 2px 10px; /* Optioneel: Pas padding naar wens aan */
@@ -584,7 +584,6 @@ code-test {
   background-color: var(--blue);
   color: var(--light);
 }
-/* Stijlen voor de navigatieknop */
 
 /* Arrow rechts */
 .arrow {
@@ -593,3 +592,25 @@ code-test {
   white-space: nowrap; /* Voorkomt dat de tekst wordt gewrapt */
 }
 /* Arrow rechts */
+
+/* custom-section */
+.custom-section {
+  display: inline-block; /* Veranderd naar inline-block */
+  padding: 2px 10px; /* Optioneel: Pas padding naar wens aan */
+  background-color: var(---mydark); /* Achtergrondkleur van het codevak */
+  /* color: var(--blue); */
+  border: none;
+  border-radius: 5px;
+  border-color: var(--dark);
+  box-shadow: Var(--shadow);
+  cursor: pointer;
+  transition: all 0.3s;
+  white-space: pre-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left; /* Tekst links uitlijnen */
+  max-width: 100%;
+  min-width: 100px; /* Minimale breedte van de knop */
+  margin-bottom: 2px;
+}
+/* custom-section */
