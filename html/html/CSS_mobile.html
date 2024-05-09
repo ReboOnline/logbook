@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/style.css">
     <meta name='author' content='The World of Rebo'>
+    <link rel="icon" type="image/x-icon" href="../../Media/ico/RB.ico">
 
     <title>CSS Styles for mobile devices</title>
+    
 </head>
 <body>
   <div class="wrapper">
@@ -41,23 +43,65 @@
   </div>
 <!-- StickyButton -->
 
-               <!-- <b> = bold text
-                    <i> = italic text
-                    <del> =  doorgestreept
-                    <ins> = onderstreept
-                    <mark> = geel markeer
-                    <sup> = kleine boven text -->
-<!--Hieronder een snippet 'colorvak' met strongBR, li-strong, dd-strong, codeblue, aReboBlue, 
-imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
+<!-- Tekstopmaak 
+-- <b> = bold text 
+-- <i> = italic text 
+-- <del> = doorgestreept 
+-- <ins> = onderstreept 
+-- <mark> = geel gemarkeerd 
+-- <sup> = kleine boventekst -->
+
+<!--
+-- strongBR
+-- li-strong
+-- dd-strong
+-- codeblue
+-- aReboBlue
+-- imgRebo
+-- spanBleuColor
+-- xmp-code
+-- xmp
+-- codespandark
+-- ulli
+-- olli
+-- btnCopy-REBO
+-- btnNAV-REBO
+-- btnSection-REBO
+-- list-Arrow
+-- Arrow
+-- H3
+-- Hieronder een snippet 'colorvak' aanvullen met bovenstaande snippets -->
  
-<code><span style='color: var(--dark);'> <span style='color: var(--blue);'>16-06-2023</span></code>
+<a href='#' class='navButton'>CSS Styles for mobile devices</a>
 <br>
 <br>
-<h1>CSS Styles for mobile devices</h1>
+<dd>
+<strong style='color: var(--green);'>The empty CSS</strong><br>
+Onderstaande media stijlen kun je gebruiken voor verschillende schermmaten <br>
+<br>
+
+<div>Click tekst below to copy</div>
+<xmp id="copyText1" style="display: none;">
+  /* Styles for mobile devices */
+
+  @media (max-width: 767px) {
+  
+    /* CSS rules for mobile devices (less than or equal to 767px) */
+  
+  }
+</xmp> <button class="copyBtn" id="copyBtn1"></button>
+</dd>
+<br>
+<hr>
+<br>
+
+<!--Hieronder een snippet 'colorvak' met strongBR, dd-strong, aReboBlue,
+btnCopy-REBO, btnNAV-REBO, btnSection-REBO, list-Arrow, Arrow, imgRebo, spanBleuColor, xmp, ulli, olli -->
 
 
-<dd><strong>The empty CSS</strong><br>
-  Onderstaande media stijlen kun je gebruiken voor verschillende schermmaten
+
+<dd><strong></strong><br>
+  
 <div class='code-container'>
 <pre>
 <code>
@@ -216,5 +260,6 @@ imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
 
   </div>
   <!-- Wrapper Ends -->
+  <script src="../../js/script.js"></script>
 </body>
 </html>

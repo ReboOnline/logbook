@@ -402,7 +402,7 @@ footer {
 }
 
 .content-table tbody tr:last-of-type {
-  border-bottom: 2px solid var(--mydark);/*Bottem-line*/
+  border-bottom: 2px solid var(---mydark);/*Bottem-line*/
 }
 
 .content-table tbody tr.active-row {
@@ -457,7 +457,7 @@ header {
 }
 
 /* <!-- Portfolio --> */
-/* div.gallery {
+div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
@@ -476,7 +476,7 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
-} */
+}
 /* <!-- Portfolio --> */
 
 /* <!-- StickyButton --> */
@@ -517,8 +517,8 @@ pre {
 code-test {
   display: block; /* Om ervoor te zorgen dat de code wordt weergegeven als een blok */
   padding: 10px;
-  background-color: var(--mydark); /* Achtergrondkleur van het codevak */
-  border: 1px solid var(--mydark); /* Rand rondom het codevak */
+  background-color: var(---mydark); /* Achtergrondkleur van het codevak */
+  border: 1px solid var(---mydark); /* Rand rondom het codevak */
   border-radius: 5px; /* Afronding van de randen */
   border-color: var(--dark);
   box-shadow: Var(--shadow);
@@ -537,7 +537,7 @@ code-test {
 /* Copy code container */
 .copyBtn {
   padding: 2px;
-  background-color: var(--info); /* Achtergrondkleur van het codevak */
+  background-color: var(---mydark); /* Achtergrondkleur van het codevak */
   color: var(--blue);
   border: none;
   border-radius: 5px;
@@ -562,7 +562,7 @@ code-test {
 .navButton {
   display: inline-block; /* Veranderd naar inline-block */
   padding: 2px 10px; /* Optioneel: Pas padding naar wens aan */
-  background-color: var(--info); /* Achtergrondkleur van het codevak */
+  background-color: var(---mydark); /* Achtergrondkleur van het codevak */
   color: var(--blue);
   border: none;
   border-radius: 5px;
@@ -595,8 +595,8 @@ code-test {
 /* custom-section */
 .custom-section {
   display: inline-block; /* Veranderd naar inline-block */
-  padding: 5px 5px 5px; /* Optioneel: Pas padding naar wens aan */
-  background-color: var(--info); /* Achtergrondkleur van het codevak */
+  padding: 2px 10px; /* Optioneel: Pas padding naar wens aan */
+  background-color: var(---mydark); /* Achtergrondkleur van het codevak */
   /* color: var(--blue); */
   border: none;
   border-radius: 5px;
@@ -609,34 +609,21 @@ code-test {
   text-overflow: ellipsis;
   text-align: left; /* Tekst links uitlijnen */
   max-width: 100%;
-  min-width: auto; /* Minimale breedte van de knop */
+  min-width: 100px; /* Minimale breedte van de knop */
   margin-bottom: 2px;
-  text-align: left;
 }
 /* custom-section */
 
-/*Gallery test Youtube*/
-.gallery{
-  display: inline-block;
-  border: 1px solid var(--shadow);
-  box-shadow: var(--shadow);
-  margin: 10px;
-  width: auto;
-}
-.gallery .description{
+/* cookie-popup */
+.cookie-popup {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
   padding: 10px;
-  text-align: left;
-}
-
-.gallery:hover{
-  box-shadow: 1px var(--shadow);
-}
-.gallery img{
-  width: 100%;
-  height: auto;
-}
-/*Gallery test Youtube*/
-
-.dd-rebo{
-  margin-bottom: 80px; /* Hiermee voeg je 20px ruimte onder elke alinea toe */
+  border-radius: 5px;
+  z-index: 9999;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }

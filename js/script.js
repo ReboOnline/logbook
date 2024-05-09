@@ -41,5 +41,11 @@
         });
     });
 
-    
+    //Cookies popup voor home index 
+    document.addEventListener("DOMContentLoaded", function() {
+        var popup = document.getElementById('cookie-popup');
+        setTimeout(function() {
+            popup.style.display = 'none';
+        }, 2000); // Verberg na 2 seconden
+    });
 
