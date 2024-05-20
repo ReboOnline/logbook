@@ -184,6 +184,23 @@ img {
   padding: 3rem;
 }
 
+/* grid-3 = Info voor drie columns */
+.grid-3 {
+  background: var(--info);
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(3, 3fr); /*de eerste 1 is voor het anntal rijen de tweede 1ft is hoe de rijen zijn verdeeld*/
+  padding: 3rem;
+}
+
+.item {
+  padding: 20px;
+  background: var(--info);
+  text-align: center;
+}
+/* grid-3 = Info voor drie columns */
+
 /* Portfolio */
 .portfolio {
   display: grid;
@@ -205,8 +222,21 @@ footer {
   padding: 1rem;
 }
 
-/* Media Queries */
-@media (max-width: 700px) {
+ /* Media query voor iPad (portretmodus en hoger) */
+ @media (max-width: 1024px) {
+  .grid-3 {
+      grid-template-columns: repeat(2, 1fr); /* Twee kolommen */
+  }
+  .grid-3 .item:nth-child(3) {
+      grid-column: span 2; /* Laat de derde kolom over de volledige breedte gaan */
+  }
+}
+
+/* Media query voor mobiele apparaten */
+@media (max-width: 768px) {
+  .grid-3 {
+    grid-template-columns: 1fr; /* Eén kolom */
+}
   .top-container {
     grid-template-areas:
       'showcase showcase'
@@ -233,6 +263,10 @@ footer {
 }
 
 @media (max-width: 500px) {
+
+  .grid-3 {
+    grid-template-columns: 1fr; /* Eén kolom */
+}
   .top-container {
     grid-template-areas:
       'showcase'
