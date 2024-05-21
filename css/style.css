@@ -160,20 +160,14 @@ img {
   box-shadow: var(--shadow);
 }
 
-.box_collega {
+.box-left {
   background: var(--info);
   text-align: left;
   padding: 1.5rem 2rem;
-  box-shadow: var(--shadow);
+  box-shadow: var(--primary);
   
 }
-.box_collega_rechts {
-  background: var(--info);
-  text-align: left;
-  padding: 1.5rem 2rem;
-  box-shadow: var(--shadow);
-  
-}
+
 /* Info */
 .info {
   background: var(--info);
@@ -622,6 +616,7 @@ code-test {
   box-shadow: var(--shadow);
   margin: 10px;
   width: auto;
+  text-align: left;
 }
 .gallery .description{
   padding: 10px;
@@ -639,4 +634,29 @@ code-test {
 
 .dd-rebo{
   margin-bottom: 80px; /* Hiermee voeg je 20px ruimte onder elke alinea toe */
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between; /* Verdeel de ruimte gelijkmatig */
+  flex-wrap: wrap; /* Laat items ombreken naar een nieuwe regel indien nodig */
+}
+.item-flex {
+  flex: 1; /* Laat elk item gelijkmatig groeien */
+  margin: 10px;
+  padding: 20px;
+  background-color: var(--info);
+  text-align: center;
+}
+
+/* Media query voor iPad en kleinere apparaten */
+@media (max-width: 1024px) {
+  .container-flex {
+      flex-direction: column; /* Zet de items onder elkaar */
+      align-items: center; /* Centreer de items horizontaal */
+  }
+  .item-flex {
+      flex: none; /* Schakel flex-groei uit */
+      width: 100%; /* Laat elk item de volledige breedte gebruiken */
+  }
 }

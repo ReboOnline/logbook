@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../css/style.css">
     <meta name='author' content='The World of Rebo'>
 
-    <title>New page</title>
+    <title>Flexbox</title>
     <link rel="icon" type="image/x-icon" href="../../Media/ico/RB.ico">
 </head>
 <body>
@@ -93,46 +93,74 @@
     <li><span style="color: var(--primary);">Easy Alignment: Easy alignment of items along the major and transverse axes.</span></li>
     <li><span style="color: var(--primary);">Reordering: Ability to change the order of items without modifying the HTML structure.</span></li>
   </ul>
+<dd class="dd-rebo">
+  <div class="container-flex">
+    <div class="item-flex">
+      <div class="gallery">
+<xmp id="copyText1" style="display: none;">
+ <div class="container-flex">
+    <div class="item-flex">Kolom 1</div>
+  <div class="item-flex">Kolom 2</div>
+  <div class="item-flex">Kolom 3</div>
+ </div>
+</xmp> <button class="copyBtn" id="copyBtn1"></button>
+      <div class="description">Click on the blue text to copy and adjust the HTML to your own wishes</div>
+      </div>
+      <br>
+      <br>
+      <!-- Gallery foto -->
+    </div>
+    <div class="item-flex">
+      <div class="gallery">
+      <xmp id="copyText2" style="display: none;">
+        .container-flex {
+          display: flex;
+          justify-content: space-between; /* Verdeel de ruimte gelijkmatig */
+          flex-wrap: wrap; /* Laat items ombreken naar een nieuwe regel indien nodig */
+        }
+        .item-flex {
+          flex: 1; /* Laat elk item gelijkmatig groeien */
+          margin: 10px;
+          padding: 20px;
+          background-color: var(--info);
+          text-align: center;
+        }
+        
+        /* Media query voor iPad en kleinere apparaten */
+        @media (max-width: 1024px) {
+          .container-flex {
+              flex-direction: column; /* Zet de items onder elkaar */
+              align-items: center; /* Centreer de items horizontaal */
+          }
+          .item-flex {
+              flex: none; /* Schakel flex-groei uit */
+              width: 100%; /* Laat elk item de volledige breedte gebruiken */
+          }
+        }
+      </xmp> <button class="copyBtn" id="copyBtn2"></button>
+      <div class="description">Click on the blue text to copy and adjust the CSS to your liking</div>
+      </div>
+      <br>
+      <br>
+      <!-- Gallery foto -->
+    </div>
+    <div class="item-flex">
+     <div class="gallery">
+      Flex Container: To use Flexbox, you start by defining a flex container. <br>
+      This container holds one or more flex items. You can create a flex container by setting the display property to flex. <br>
+      You can adjust the CSS below to create a flexible layout that adapts to different screen sizes. We will use media queries 
+      to make the flex items appear one below the other on smaller screens, such as an iPad or mobile.
+     </div>
+     <br>
+     <br>
+     <!-- Gallery foto -->
 
- 
- <br>
- <ul>
- <li><strong style="color: var(-- whitesmoke);">Lorem, ipsum dolor:</strong><br>
- Lorem ipsum dolor sit amet.
- </li>
- </ul>
- 
- <br>
-
- <ul style="list-style-type: none; padding-left: 0;"><strong style="color: var(-- whitesmoke);">Lorem, ipsum dolor:</strong><br>
-  <li>Item 1</li>
-  <li>Item 2</li>
-  <li>Item 3</li>
-</ul>
-
-<br>
-
-
-<ul style="list-style-type: none;"><strong style="color: var(--green);">Lorem, ipsum dolor:</strong><br>
-  <li>Item 1</li>
-  <li>Item 2</li>
-  <li>Item 3</li>
-</ul>
- 
-  
-  
-
-  
+    </div>
+</div>
 </dd>
-<dd>
-<ul style="color: var(--green); list-style-type: none">
-  <li>Lorem ipsum
-    <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
-         <li><span style="color: var(--primary);">Lorem, ipsum dolor.</span></li>
-      </ul>
-  </li>
-</ul>
-</dd>
+ 
+
+
 <br>
 <hr>
 <!--Hieronder een snippet 'colorvak' met strongBR, dd-strong, aReboBlue,
