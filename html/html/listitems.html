@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Notes and more">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/style.css">
-    <meta name='author' content='The World of Rebo'>
-    <link rel="icon" type="image/x-icon" href="../../Media/ico/RB.ico">
 
-    <title>List items</title>
-    
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Notes and more">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <meta name='author' content='The World of Rebo'>
+  <link rel="icon" type="image/x-icon" href="../../Media/ico/RB.ico">
+
+  <title>List items</title>
+
 </head>
+
 <body>
   <div class="wrapper">
 
-<!-- Navigation -->
-<nav class="main-nav">
-  <ul>
-    <li>
-      <a href="../../index.html">Home Online</a>
-    </li>
-    <li>
-      <a href="index-mint.html">Linux Mint</a>
-    </li>
-    <li>
-      <a href="html/ArcoLinux/arcolinuxmain.html">ArcoMain</a>
-    </li>
-   <li>
-      <a href="../../index.html#Read"><span style='color: var(--red);'>Read me first</span></a>
-    </li>
-  </ul>
-</nav>
-<!-- Navigation -->
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <ul>
+        <li>
+          <a href="../../index.html">Home Online</a>
+        </li>
+        <li>
+          <a href="index-mint.html">Linux Mint</a>
+        </li>
+        <li>
+          <a href="html/ArcoLinux/arcolinuxmain.html">ArcoMain</a>
+        </li>
+        <li>
+          <a href="../../index.html#Read"><span style='color: var(--red);'>Read me first</span></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Navigation -->
 
     <!-- Info Section één_block -->
     <section class="info">
       <div>
-<!-- StickyButton -->
-<div class="fixed">  
-  <a href="#"><span style='color: var(--blue);'>Top</span></a>
-  </div>
-<!-- StickyButton -->
+        <!-- StickyButton -->
+        <div class="fixed">
+          <a href="#"><span style='color: var(--blue);'>Top</span></a>
+        </div>
+        <!-- StickyButton -->
 
-<!-- Tekstopmaak 
+        <!-- Tekstopmaak 
 -- <b> = bold text 
 -- <i> = italic text 
 -- <del> = doorgestreept 
@@ -51,7 +53,7 @@
 -- <mark> = geel gemarkeerd 
 -- <sup> = kleine boventekst -->
 
-<!--
+        <!--
 -- strongBR
 -- li-strong
 -- dd-strong
@@ -72,449 +74,465 @@
 -- H3
 -- Hieronder een snippet 'colorvak' aanvullen met bovenstaande snippets -->
 
-
- 
-<a href='index_html.html' class='navButton'>Home HTML</a>
-<br>
-<br>
-<dd class="dd-rebo">
-<strong style='color: var(--green);'>Lists for HTML</strong><br>
-In addition to the usual ordered lists <xmp id="copyText1" style="display: none;"><ol></xmp> <button class="copyBtn" id="copyBtn1"></button> 
-and unordered lists <xmp id="copyText2" style="display: none;"><ul></xmp> <button class="copyBtn" id="copyBtn2"></button>, there are a few other types of lists you can use in HTML.
-</dd>
-
-
-<dd class="dd-rebo">
-<div class='gallery'>
-<br>
-&#8195; &#8195;<span style='color: var(--green);'>The ordered list:</span> <br>
-  <div class='description'>
-    <ol type="1">
-      <li>Use &lt;ol&gt; for a numbered list.</li>
-      <li type="&lt">Items are numbered by default (1, 2, 3, ...).</li>
-      <li>Use the type attribute to change the numbering style (e.g., type="A" for uppercase letters, type="a" for lowercase letters, etc.).</li>
-      <li>Use the start attribute to start the counter from a specific number.</li>
-    </ol>
-    
-   
-  </div>
-&#8195; &#8195;
-<xmp id="copyText3" style="display: none;">
- <ol>
- <li></li>
- <li></li>
- <li></li>
- </ol>
-    </xmp> <button class="copyBtn" id="copyBtn3"></button>
-</a>
-<div class='description'>&#8593;Click the blue to copy&#8593;</div>
-</div>
-<br>
-</dd>
-
-<dd class="dd-rebo">
-  <div class='gallery'>
-    <br>
-    &#8195; &#8195;<span style='color: var(--green);'>The unordered list:</span> <br>
-    <ul type="-">
-      <li>Use &lt;ul&gt; for a unordered list.</li>
-      <li type="&lt">Items are marked by bullitpoint (unordered).</li>
-      <li>Use the type attribute to change the numbering style (e.g., type="-" for uppercase letters, type="a" for lowercase letters, etc.).</li>
-      <li>Use the start attribute to start the counter from a specific number.</li>
-      </ul>
-    &#8195; &#8195;<xmp id="copyText4" style="display: none;">
- <ul>
- <li></li>
- <li></li>
- <li></li>
- </ul>
-      </xmp> <button class="copyBtn" id="copyBtn4"></button>
-  </a>
-  <div class='description'>&#8593;Click the blue to copy&#8593;</div>
-  </div>
-  <br>
-  </dd>
-
-  <dd class="dd-rebo">
-    <div class="gallery">
-      <div class="discription">
-        <ol start="1">
-          <li><strong>Ordered list (`&lt;ol&gt;`):</strong>
-              <ul>
-                  <li>Use `&lt;ol&gt;` for a numbered list.</li>
-                  <li>Items are numbered by default (1, 2, 3, ...).</li>
-                  <li>Use the `type` attribute to change the numbering style (e.g., `type="A"` for uppercase letters, `type="a"` for lowercase letters, etc.).</li>
-                  <li>Use the `start` attribute to start the counter from a specific number.</li>
-              </ul>
-          </li>
-        </ol>
-      </div>
-      <xmp id="copyText5" style="display: none;">
-        <ol start="1">
-          <li><strong>Ordered list (`&lt;ol&gt;`):</strong>
-              <ul>
-                  <li>Use `&lt;ol&gt;` for a numbered list.</li>
-                  <li>Items are numbered by default (1, 2, 3, ...).</li>
-                  <li>Use the `type` attribute to change the numbering style (e.g., `type="A"` for uppercase letters, `type="a"` for lowercase letters, etc.).</li>
-                  <li>Use the `start` attribute to start the counter from a specific number.</li>
-              </ul>
-          </li>
-        </ol>
-      </xmp> <button class="copyBtn" id="copyBtn5"></button>
-    </a>
-    <div class='description'>&#8593;Click the blue to copy&#8593;</div>
-    </div>
-    <br>
-    <br>
-  </dd>
-  <!-- Gallery foto -->
-
-  <dd class="dd-rebo">
-    <div class="gallery">
-      <div class="discription">
-        <ol start="2">
-          <li><strong>Ordered list (`&lt;ol&gt;`):</strong>
-              <ul>
-                  <li>Use `&lt;ol&gt;` for a numbered list.</li>
-                  <li>Items are numbered by default (1, 2, 3, ...).</li>
-                  <li>Use the `type` attribute to change the numbering style (e.g., `type="A"` for uppercase letters, `type="a"` for lowercase letters, etc.).</li>
-                  <li>Use the `start` attribute to start the counter from a specific number.</li>
-              </ul>
-          </li>
-        </ol>
-      </div>
-      <xmp id="copyText6" style="display: none;">
-        <ol start="2">
-          <li><strong>Lorem, ipsum dolor.</strong>
-              <ul>
-                  <li>Lorem, ipsum dolor.</li>
-                  <li>Lorem, ipsum dolor.</li>
-                  <li>Lorem, ipsum dolor.</li>
-                  <li>Lorem, ipsum dolor.</li>
-              </ul>
-          </li>
-        </ol>
-      </xmp> <button class="copyBtn" id="copyBtn6"></button>
-    </a>
-    <div class='description'>&#8593;Click the blue to copy&#8593;</div>
-    </div>
-    <br>
-    <br>
-  </dd>
-  <!-- Gallery foto -->
-
-  <dd class="dd-rebo">
-    <div class="gallery">
-      <div class="description">
-        <ol start="3">
-          <li><span style='color: var(--shadow);'>Lorem, ipsum.</span>
-            <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
-                 <li> Rebo Lorem ipsum dolor sit amet.</li>
-                 <li>Lorem ipsum dolor sit amet.</li>
-                  <li>Lorem ipsum dolor sit amet.</li>
-                 </li>
-              </ul>
-          </li>
-        </ol>
-      </div>
-      <xmp id="copyText7" style="display: none;">
-        <ol start="3">
-          <li><span style='color: var(--shadow);'>Lorem, ipsum.</span>
-            <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
-                 <li> Rebo Lorem ipsum dolor sit amet.</li>
-                 <li>Lorem ipsum dolor sit amet.</li>
-                  <li>Lorem ipsum dolor sit amet.</li>
-                 </li>
-              </ul>
-          </li>
-        </ol>
-      </xmp> <button class="copyBtn" id="copyBtn7"></button>
-
-    </a>
-    <div class='description'>&#8593;Click the blue to copy&#8593;</div>
-    </div>
-    <br>
-    <br>
-  </dd>
-<!-- Gallery foto -->
-
-<dd class="dd-rebo">
-  <div class="gallery">
-    <div class="description">
-      <ol start="4">
-        <li><span style='color: var(--green);'>Deze zin groen</span>
-          <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
-               <li> Rebo Lorem ipsum dolor sit amet.</li>
-               <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-               </li>
-            </ul>
-        </li>
-      </ol>
-    </div>
-    <xmp id="copyText8" style="display: none;">
-      <ol start="4">
-        <li>Deze zin groen
-          <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
-               <li>Lorem ipsum dolor sit amet.</li>
-               <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-               </li>
-            </ul>
-        </li>
-      </ol>
-    </xmp> <button class="copyBtn" id="copyBtn8"></button>
-
-  </a>
-  <div class='description'>&#8593;Click the blue to copy&#8593;</div>
-  </div>
-  <br>
-  <br>
-</dd>
-<!-- Gallery foto -->
-
-<dd class="dd-rebo">
-  <div class="gallery">
-    <div class="description">
-      <ol start="5">
-        <li style="color: var(--green);">Deze zin groen
-          <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
-               <li><span style='color: var(--primary);'>Lorem ipsum dolor sit amet.</span></li>
-               <li><span style='color: var(--primary);'>Lorem ipsum dolor sit amet.</span></li>
-               <li><span style='color: var(--primary);'>Lorem ipsum dolor sit amet.</span></li>
-          </ul>
-        </li>
-      </ol>
-    </div>
-    <xmp id="copyText9" style="display: none;">
-      <ol start="5">
-        <li style="color: var(--green);">Deze zin groen
-          <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
-               <li><span style='color: var(--primary);'>Lorem ipsum dolor sit amet.</span></li>
-               <li><span style='color: var(--primary);'>Lorem ipsum dolor sit amet.</span></li>
-               <li><span style='color: var(--primary);'>Lorem ipsum dolor sit amet.</span></li>
-          </ul>
-        </li>
-      </ol>
-    </xmp> <button class="copyBtn" id="copyBtn9"></button>
-
-  </a>
-  <div class='description'>&#8593;Click the blue to copy&#8593;</div>
-  </div>
-  <br>
-  <br>
-</dd>
-<!-- Gallery foto -->
-
-<dd class="dd-rebo">
-  <div class="gallery">
-    <div class="description">
-      <ul>
-        <li style="color: var(--green);">Deze zin groen
-          <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
-               <li><span style='color: var(--primary);'>Lorem ipsum dolor sit amet.</span></li>
-               <li><span style='color: var(--primary);'>Lorem ipsum dolor sit amet.</span></li>
-               <li><span style='color: var(--primary);'>Lorem ipsum dolor sit amet.</span></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <xmp id="copyText10" style="display: none;">
-      <ul>
-        <li style="color: var(--green);">Deze zin groen
-          <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
-               <li><span style='color: var(--primary);'>Lorem ipsum dolor sit amet.</span></li>
-               <li><span style='color: var(--primary);'>Lorem ipsum dolor sit amet.</span></li>
-               <li><span style='color: var(--primary);'>Lorem ipsum dolor sit amet.</span></li>
-          </ul>
-        </li>
-      </ul>
-    </xmp> <button class="copyBtn" id="copyBtn10"></button>
-
-  </a>
-  <div class='description'>&#8593;Click the blue to copy&#8593;</div>
-  </div>
-  <br>
-  <br>
-</dd>
-<!-- Gallery foto -->
-
-<dd class="dd-rebo">
-  <div class="gallery">
-    <div class="description">
-      <dl>
-        <dt><span style='color: var(--green);'>HTML</span></dt>
-        <dd>Hypertext Markup Language</dd>
+        <a href='index_html.html' class='navButton'>Home HTML</a>
         <br>
-        <dt><span style='color: var(--green);'>CSS</span></dt>
-        <dd>Cascading Style Sheets</dd>
-      </dl>
-    </div>
-    <xmp id="copyText11" style="display: none;">
-      <dl>
-        <dt><span style='color: var(--green);'>HTML</span></dt>
-        <dd>Hypertext Markup Language</dd>
         <br>
-        <dt><span style='color: var(--green);'>CSS</span></dt>
-        <dd>Cascading Style Sheets</dd>
-      </dl>
-    </xmp> <button class="copyBtn" id="copyBtn11"></button>
+        <dd class="dd-rebo">
+          <strong style='color: var(--green);'>Lists for HTML</strong><br>
+          In addition to the usual ordered lists <xmp id="copyText1" style="display: none;">
+            <ol>
+          </xmp> <button class="copyBtn" id="copyBtn1"></button>
+          and unordered lists <xmp id="copyText2" style="display: none;">
+            <ul>
+          </xmp> <button class="copyBtn" id="copyBtn2"></button>, there are a few other types of lists you can use in
+          HTML.
+        </dd>
 
-  </a>
-  <div class='description'>&#8593;Click the blue to copy&#8593;</div>
-  </div>
-  <br>
-  <br>
-</dd>
-<!-- Gallery foto -->
+        <dd class="dd-rebo">
+          <div class='gallery'>
+            <br>
+            &#8195; &#8195;<span style='color: var(--green);'>The ordered list:</span> <br>
+            <div class='description'>
+              <ol type="1">
+                <li>Use &lt;ol&gt; for a numbered list.</li>
+                <li type="&lt">Items are numbered by default (1, 2, 3, ...).</li>
+                <li>Use the type attribute to change the numbering style (e.g., type="A" for uppercase letters, type="a"
+                  for lowercase letters, etc.).</li>
+                <li>Use the start attribute to start the counter from a specific number.</li>
+              </ol>
 
-<dd class="dd-rebo">
-  <div class="gallery">
-    <div class="description">
-      <ul>
-        <li><label><input type="checkbox"> Option 1</label></li>
-        <li><label><input type="checkbox"> Option 2</label></li>
-        <li><label><input type="checkbox"> Option 3</label></li>
-      </ul>
-    </div>
-    <xmp id="copyText12" style="display: none;">
-      <ul>
-        <li><label><input type="checkbox"> Option 1</label></li>
-        <li><label><input type="checkbox"> Option 2</label></li>
-        <li><label><input type="checkbox"> Option 3</label></li>
-      </ul>
-    </xmp> <button class="copyBtn" id="copyBtn12"></button>
+            </div>
+            &#8195; &#8195;
+            <xmp id="copyText3" style="display: none;">
+              <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ol>
+            </xmp> <button class="copyBtn" id="copyBtn3"></button>
+            </a>
+            <div class='description'>&#8593;Click the blue to copy&#8593;</div>
+          </div>
+          <br>
+        </dd>
 
-  </a>
-  <div class='description'>&#8593;Click the blue to copy&#8593;</div>
-  </div>
-  <br>
-  <br>
-</dd>
-<!-- Gallery foto -->
+        <dd class="dd-rebo">
+          <div class='gallery'>
+            <br>
+            &#8195; &#8195;<span style='color: var(--green);'>The unordered list:</span> <br>
+            <ul type="-">
+              <li>Use &lt;ul&gt; for a unordered list.</li>
+              <li type="&lt">Items are marked by bullitpoint (unordered).</li>
+              <li>Use the type attribute to change the numbering style (e.g., type="-" for uppercase letters, type="a"
+                for lowercase letters, etc.).</li>
+              <li>Use the start attribute to start the counter from a specific number.</li>
+            </ul>
+            &#8195; &#8195;<xmp id="copyText4" style="display: none;">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </xmp> <button class="copyBtn" id="copyBtn4"></button>
+            </a>
+            <div class='description'>&#8593;Click the blue to copy&#8593;</div>
+          </div>
+          <br>
+        </dd>
 
-<dd class="dd-rebo">
-  <div class="gallery">
-    <div class="description">
-      <select>
-        <optgroup label="Group 1">
-            <option>Lorem ipsum dolor sit amet consectetur. 1.1</option>
-            <option>Lorem ipsum dolor sit amet consectetur. 1.2</option>
-        </optgroup>
-        <optgroup label="Group 2">
-            <option>Option 2.1</option>
-            <option>Option 2.2</option>
-        </optgroup>
-      </select>
-    </div>
-    <xmp id="copyText13" style="display: none;">
-      <select>
-        <optgroup label="Group 1">
-            <option>Option 1.1</option>
-            <option>Option 1.2</option>
-        </optgroup>
-        <optgroup label="Group 2">
-            <option>Option 2.1</option>
-            <option>Option 2.2</option>
-        </optgroup>
-      </select>
-    </xmp> <button class="copyBtn" id="copyBtn13"></button>
+        <dd class="dd-rebo">
+          <div class="gallery">
+            <div class="discription">
+              <ol start="1">
+                <li><strong>Ordered list (`&lt;ol&gt;`):</strong>
+                  <ul>
+                    <li>Use `&lt;ol&gt;` for a numbered list.</li>
+                    <li>Items are numbered by default (1, 2, 3, ...).</li>
+                    <li>Use the `type` attribute to change the numbering style (e.g., `type="A"` for uppercase letters,
+                      `type="a"` for lowercase letters, etc.).</li>
+                    <li>Use the `start` attribute to start the counter from a specific number.</li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+            <xmp id="copyText5" style="display: none;">
+              <ol start="1">
+                <li><strong>Ordered list (`&lt;ol&gt;`):</strong>
+                  <ul>
+                    <li>Use `&lt;ol&gt;` for a numbered list.</li>
+                    <li>Items are numbered by default (1, 2, 3, ...).</li>
+                    <li>Use the `type` attribute to change the numbering style (e.g., `type="A"` for uppercase letters,
+                      `type="a"` for lowercase letters, etc.).</li>
+                    <li>Use the `start` attribute to start the counter from a specific number.</li>
+                  </ul>
+                </li>
+              </ol>
+            </xmp> <button class="copyBtn" id="copyBtn5"></button>
+            </a>
+            <div class='description'>&#8593;Click the blue to copy&#8593;</div>
+          </div>
+          <br>
+          <br>
+        </dd>
+        <!-- Gallery foto -->
 
-  </a>
-  <div class='description'>&#8593;Click the blue to copy&#8593;</div>
-  </div>
-  <br>
-  <br>
-</dd>
-<!-- Gallery foto -->
+        <dd class="dd-rebo">
+          <div class="gallery">
+            <div class="discription">
+              <ol start="2">
+                <li><strong>Ordered list (`&lt;ol&gt;`):</strong>
+                  <ul>
+                    <li>Use `&lt;ol&gt;` for a numbered list.</li>
+                    <li>Items are numbered by default (1, 2, 3, ...).</li>
+                    <li>Use the `type` attribute to change the numbering style (e.g., `type="A"` for uppercase letters,
+                      `type="a"` for lowercase letters, etc.).</li>
+                    <li>Use the `start` attribute to start the counter from a specific number.</li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+            <xmp id="copyText6" style="display: none;">
+              <ol start="2">
+                <li><strong>Lorem, ipsum dolor.</strong>
+                  <ul>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                  </ul>
+                </li>
+              </ol>
+            </xmp> <button class="copyBtn" id="copyBtn6"></button>
+            </a>
+            <div class='description'>&#8593;Click the blue to copy&#8593;</div>
+          </div>
+          <br>
+          <br>
+        </dd>
+        <!-- Gallery foto -->
 
-<dd class="dd-rebo">
-<div class="gallery">
+        <dd class="dd-rebo">
+          <div class="gallery">
+            <div class="description">
+              <ol start="3">
+                <li><span style='color: var(--shadow);'>Lorem, ipsum.</span>
+                  <ul
+                    style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+                    <li> Rebo Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </li>
+                </ul>
+                </li>
+              </ol>
+            </div>
+            <xmp id="copyText7" style="display: none;">
+              <ol start="3">
+                <li><span style='color: var(--shadow);'>Lorem, ipsum.</span>
+                  <ul
+                    style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+                    <li> Rebo Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </li>
+                </ul>
+                </li>
+              </ol>
+            </xmp> <button class="copyBtn" id="copyBtn7"></button>
 
-<br>
-<ul style="color: var(--green); list-style-type: none">
-   <li><strong>Lorem, ipsum dolor.</strong>
-     <ul style="list-style-type: none">
-        <li><span style="color: var(--primary);">Lorem ipsum dolor sit amet consectetur.</span></li>
-        <li><span style="color: var(--primary);">Lorem ipsum dolor sit amet.</span></li>
-     </ul>
-   </li>
-</ul>
-<xmp id="copyText14" style="display: none;">
+            </a>
+            <div class='description'>&#8593;Click the blue to copy&#8593;</div>
+          </div>
+          <br>
+          <br>
+        </dd>
+        <!-- Gallery foto -->
 
-  <ul style="color: var(--green); list-style-type: none">
-    <li><strong>Lorem, ipsum dolor.</strong>
-      <ul style="list-style-type: none">
-         <li><span style="color: var(--primary);">Lorem ipsum dolor sit amet consectetur.</span></li>
-         <li><span style="color: var(--primary);">Lorem ipsum dolor sit amet.</span></li>
-      </ul>
-    </li>
- </ul>
+        <dd class="dd-rebo">
+          <div class="gallery">
+            <div class="description">
+              <ol start="4">
+                <li><span style='color: var(--green);'>Deze zin groen</span>
+                  <ul
+                    style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+                    <li> Rebo Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </li>
+                </ul>
+                </li>
+              </ol>
+            </div>
+            <xmp id="copyText8" style="display: none;">
+              <ol start="4">
+                <li>Deze zin groen
+                  <ul
+                    style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </li>
+                </ul>
+                </li>
+              </ol>
+            </xmp> <button class="copyBtn" id="copyBtn8"></button>
 
-</xmp> <button class="copyBtn" id="copyBtn14"></button>
-<div class='description'>&#8593;Click the blue to copy&#8593;</div>
-</div>
-<br>
-<br>
-<!-- Gallery foto -->
-</dd>
+            </a>
+            <div class='description'>&#8593;Click the blue to copy&#8593;</div>
+          </div>
+          <br>
+          <br>
+        </dd>
+        <!-- Gallery foto -->
 
-<dd class="dd-rebo">
-<div class="gallery">
-<ul style="color: var(--green); list-style-type: none">
-  <li>Lorem ipsum
-    <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
-         <li><span style="color: var(--primary);">Lorem, ipsum dolor.</span></li>
-         <li><span style="color: var(--primary);">Lorem ipsum dolor sit amet.</span></li>
-      </ul>
-  </li>
-</ul>
-<xmp id="copyText15" style="display: none;">
-<ul style="color: var(--green); list-style-type: none">
-  <li>Lorem ipsum
-    <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
-         <li><span style="color: var(--primary);">Lorem, ipsum dolor.</span></li>
-         <li><span style="color: var(--primary);">Lorem ipsum dolor sit amet consectetur adipisicing.</span></li>
-      </ul>
-  </li>
-</ul>
-</xmp> <button class="copyBtn" id="copyBtn15"></button>
-<div class='description'>&#8593;Click the blue to copy&#8593;</div>
-</div>
-<br>
-<br>
-<!-- Gallery foto -->
-</dd>
+        <dd class="dd-rebo">
+          <div class="gallery">
+            <div class="description">
+              <ol start="5">
+                <li style="color: var(--green);">Deze zin groen
+                  <ul
+                    style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+                    <li><span style='color: var(--primary);'>Lorem ipsum dolor sit amet.</span></li>
+                    <li><span style='color: var(--primary);'>Lorem ipsum dolor sit amet.</span></li>
+                    <li><span style='color: var(--primary);'>Lorem ipsum dolor sit amet.</span></li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+            <xmp id="copyText9" style="display: none;">
+              <ol start="5">
+                <li style="color: var(--green);">Deze zin groen
+                  <ul
+                    style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+                    <li><span style='color: var(--primary);'>Lorem ipsum dolor sit amet.</span></li>
+                    <li><span style='color: var(--primary);'>Lorem ipsum dolor sit amet.</span></li>
+                    <li><span style='color: var(--primary);'>Lorem ipsum dolor sit amet.</span></li>
+                  </ul>
+                </li>
+              </ol>
+            </xmp> <button class="copyBtn" id="copyBtn9"></button>
 
-<!-- snippet test -->
+            </a>
+            <div class='description'>&#8593;Click the blue to copy&#8593;</div>
+          </div>
+          <br>
+          <br>
+        </dd>
+        <!-- Gallery foto -->
 
+        <dd class="dd-rebo">
+          <div class="gallery">
+            <div class="description">
+              <ul>
+                <li style="color: var(--green);">Deze zin groen
+                  <ul
+                    style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+                    <li><span style='color: var(--primary);'>Lorem ipsum dolor sit amet.</span></li>
+                    <li><span style='color: var(--primary);'>Lorem ipsum dolor sit amet.</span></li>
+                    <li><span style='color: var(--primary);'>Lorem ipsum dolor sit amet.</span></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <xmp id="copyText10" style="display: none;">
+              <ul>
+                <li style="color: var(--green);">Deze zin groen
+                  <ul
+                    style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+                    <li><span style='color: var(--primary);'>Lorem ipsum dolor sit amet.</span></li>
+                    <li><span style='color: var(--primary);'>Lorem ipsum dolor sit amet.</span></li>
+                    <li><span style='color: var(--primary);'>Lorem ipsum dolor sit amet.</span></li>
+                  </ul>
+                </li>
+              </ul>
+            </xmp> <button class="copyBtn" id="copyBtn10"></button>
 
-<br>
-<ul style="color: var(--green); list-style-type: none">
-   <li><strong>lorem</strong>
-     <ul style="list-style-type: none">
-        <li><span style="color: var(--primary);">lorem</span></li>
-     </ul>
-   </li>
-</ul>
+            </a>
+            <div class='description'>&#8593;Click the blue to copy&#8593;</div>
+          </div>
+          <br>
+          <br>
+        </dd>
+        <!-- Gallery foto -->
 
-<ol>
-    <li><strong><span style="color: var(--green);">Titel</span></strong>
-        <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
-            <li><span style="color: var(--primary);">tekst</span></li>
+        <dd class="dd-rebo">
+          <div class="gallery">
+            <div class="description">
+              <dl>
+                <dt><span style='color: var(--green);'>HTML</span></dt>
+                <dd>Hypertext Markup Language</dd>
+                <br>
+                <dt><span style='color: var(--green);'>CSS</span></dt>
+                <dd>Cascading Style Sheets</dd>
+              </dl>
+            </div>
+            <xmp id="copyText11" style="display: none;">
+              <dl>
+                <dt><span style='color: var(--green);'>HTML</span></dt>
+                <dd>Hypertext Markup Language</dd>
+                <br>
+                <dt><span style='color: var(--green);'>CSS</span></dt>
+                <dd>Cascading Style Sheets</dd>
+              </dl>
+            </xmp> <button class="copyBtn" id="copyBtn11"></button>
+
+            </a>
+            <div class='description'>&#8593;Click the blue to copy&#8593;</div>
+          </div>
+          <br>
+          <br>
+        </dd>
+        <!-- Gallery foto -->
+
+        <dd class="dd-rebo">
+          <div class="gallery">
+            <div class="description">
+              <ul>
+                <li><label><input type="checkbox"> Option 1</label></li>
+                <li><label><input type="checkbox"> Option 2</label></li>
+                <li><label><input type="checkbox"> Option 3</label></li>
+              </ul>
+            </div>
+            <xmp id="copyText12" style="display: none;">
+              <ul>
+                <li><label><input type="checkbox"> Option 1</label></li>
+                <li><label><input type="checkbox"> Option 2</label></li>
+                <li><label><input type="checkbox"> Option 3</label></li>
+              </ul>
+            </xmp> <button class="copyBtn" id="copyBtn12"></button>
+
+            </a>
+            <div class='description'>&#8593;Click the blue to copy&#8593;</div>
+          </div>
+          <br>
+          <br>
+        </dd>
+        <!-- Gallery foto -->
+
+        <dd class="dd-rebo">
+          <div class="gallery">
+            <div class="description">
+              <select>
+                <optgroup label="Group 1">
+                  <option>Lorem ipsum dolor sit amet consectetur. 1.1</option>
+                  <option>Lorem ipsum dolor sit amet consectetur. 1.2</option>
+                </optgroup>
+                <optgroup label="Group 2">
+                  <option>Option 2.1</option>
+                  <option>Option 2.2</option>
+                </optgroup>
+              </select>
+            </div>
+            <xmp id="copyText13" style="display: none;">
+              <select>
+                <optgroup label="Group 1">
+                  <option>Option 1.1</option>
+                  <option>Option 1.2</option>
+                </optgroup>
+                <optgroup label="Group 2">
+                  <option>Option 2.1</option>
+                  <option>Option 2.2</option>
+                </optgroup>
+              </select>
+            </xmp> <button class="copyBtn" id="copyBtn13"></button>
+
+            </a>
+            <div class='description'>&#8593;Click the blue to copy&#8593;</div>
+          </div>
+          <br>
+          <br>
+        </dd>
+        <!-- Gallery foto -->
+
+        <dd class="dd-rebo">
+          <div class="gallery">
+
+            <br>
+            <ul style="color: var(--green); list-style-type: none">
+              <li><strong>Lorem, ipsum dolor.</strong>
+                <ul style="list-style-type: none">
+                  <li><span style="color: var(--primary);">Lorem ipsum dolor sit amet consectetur.</span></li>
+                  <li><span style="color: var(--primary);">Lorem ipsum dolor sit amet.</span></li>
+                </ul>
+              </li>
+            </ul>
+            <xmp id="copyText14" style="display: none;">
+
+              <ul style="color: var(--green); list-style-type: none">
+                <li><strong>Lorem, ipsum dolor.</strong>
+                  <ul style="list-style-type: none">
+                    <li><span style="color: var(--primary);">Lorem ipsum dolor sit amet consectetur.</span></li>
+                    <li><span style="color: var(--primary);">Lorem ipsum dolor sit amet.</span></li>
+                  </ul>
+                </li>
+              </ul>
+
+            </xmp> <button class="copyBtn" id="copyBtn14"></button>
+            <div class='description'>&#8593;Click the blue to copy&#8593;</div>
+          </div>
+          <br>
+          <br>
+          <!-- Gallery foto -->
+        </dd>
+
+        <dd class="dd-rebo">
+          <div class="gallery">
+            <ul style="color: var(--green); list-style-type: none">
+              <li>Lorem ipsum
+                <ul
+                  style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+                  <li><span style="color: var(--primary);">Lorem, ipsum dolor.</span></li>
+                  <li><span style="color: var(--primary);">Lorem ipsum dolor sit amet.</span></li>
+                </ul>
+              </li>
+            </ul>
+            <xmp id="copyText15" style="display: none;">
+              <ul style="color: var(--green); list-style-type: none">
+                <li>Lorem ipsum
+                  <ul
+                    style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+                    <li><span style="color: var(--primary);">Lorem, ipsum dolor.</span></li>
+                    <li><span style="color: var(--primary);">Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </xmp> <button class="copyBtn" id="copyBtn15"></button>
+            <div class='description'>&#8593;Click the blue to copy&#8593;</div>
+          </div>
+          <br>
+          <br>
+          <!-- Gallery foto -->
+        </dd>
+
+        <!-- snippet test -->
+
+        <br>
+        <ul style="color: var(--green); list-style-type: none">
+          <li><strong>lorem</strong>
+            <ul style="list-style-type: none">
+              <li><span style="color: var(--primary);">lorem</span></li>
+            </ul>
+          </li>
         </ul>
-    </li>
-</ol>
 
+        <ol>
+          <li><strong><span style="color: var(--green);">Titel</span></strong>
+            <ul
+              style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+              <li><span style="color: var(--primary);">tekst</span></li>
+            </ul>
+          </li>
+        </ol>
 
-<!-- snippet test -->
-  
+        <!-- snippet test -->
 
-
-<!--einde body div--> </div><!--einde body div-->
-<!--einde body section--> </section>  <!--einde body section-->
-
-   
+        <!--einde body div-->
+      </div>
+      <!--einde body div-->
+      <!--einde body section-->
+    </section>
+    <!--einde body section-->
 
     <!-- Footer -->
     <footer>
@@ -526,4 +544,5 @@ and unordered lists <xmp id="copyText2" style="display: none;"><ul></xmp> <butto
   <!-- Wrapper Ends -->
   <script src="../../js/script.js"></script>
 </body>
+
 </html>
