@@ -60,6 +60,24 @@ img {
   grid-gap: 20px;
 }
 
+/*tekst-button*/
+.tekst-button {
+  background-color: transparent;
+  color: var(--blue);
+  border: 1px solid var(--blue); /* Kies hier wit of blauw */
+  border-radius: 4px;
+  padding: 0px 2px;
+  font-size: 14px;
+  font-family: monospace;
+  /* cursor: pointer;
+  transition: color 0.3s ease, border-color 0.3s ease; */
+}
+
+/* .tekst-button:hover {
+  color: var(--primary);
+  border-color: var(--blue);
+} */
+
 /* Navigation */
 .main-nav ul {
   display: grid;
