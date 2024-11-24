@@ -63,7 +63,7 @@
           <br>
           <H3><span style='color: var(--primary);'>How It Works</span></H3>
           <p><span style="color: var(--primary);">The script uses Python's powerful Pathlib library to manage file paths and directories. 
-            It also leverages dictionaries to group file extensions into categories such as images, documents, videos, and special files (like <button class="tekst-button">.zip</button> or <button class="tekst-button">.exe</button>).</span></p>
+            It also leverages dictionaries to group file extensions into categories such as images, documents, videos, and special files like <button class="tekst-button">.zip</button> or <button class="tekst-button">.exe</button>.</span></p>
 
           <ul style="color: var(--primary); list-style-type: none">
             <li>Here'the brakdodwn
@@ -77,6 +77,176 @@
                 </ul>
             </li>
           </ul>
+      
+      <H3><span style='color: var(--primary);'>The Python Code</span></H3>
+      <p><span style="color: var(--primary);">Here’s the complete code for the file organizer:</span></p>
+
+      <dd class="dd-rebo">
+        <div class="gallery">
+          <div class="description">
+            ↓ Copy to code ↓
+          </div>
+          <xmp id="copyText1" style="display: none;">
+            import os
+            from pathlib import Path
+            from datetime import datetime
+            
+            # Define the folder to organize
+            folder_to_organize = Path(r"C:\Path\To\Your\Folder")
+            
+            # Check if the folder exists
+            if not folder_to_organize.exists():
+                print(f"The folder {folder_to_organize} does not exist.")
+                exit()
+            
+            # Create a log file
+            log_file = folder_to_organize / f"log_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
+            with log_file.open("w", encoding="utf-8") as log:
+                log.write("File Organizer Log\n")
+                log.write(f"Executed on: {datetime.now()}\n\n")
+            
+            # Define file categories
+            file_categories = {
+                "Images": {"jpg", "jpeg", "png", "gif", "bmp", "tiff", "webp", "svg"},
+                "Documents": {"txt", "doc", "docx", "pdf", "xls", "xlsx", "ppt", "pptx", "odt"},
+                "Music": {"mp3", "wav", "flac", "aac", "ogg", "m4a", "wma"},
+                "Videos": {"mp4", "mkv", "avi", "mov", "wmv", "flv", "webm"},
+                "Special": {"gpx", "sav", "exe", "zip", "rar", "7z", "iso", "bat"},
+            }
+            
+            # Sort files
+            for item in folder_to_organize.rglob("*"):
+                if item.is_file():
+                    # Get file extension
+                    file_extension = item.suffix[1:].lower()
+                    if not file_extension:
+                        file_extension = "Unknown"
+            
+                    # Determine category
+                    destination_folder = None
+                    for category, extensions in file_categories.items():
+                        if file_extension in extensions:
+                            destination_folder = folder_to_organize / category
+                            break
+                    if not destination_folder:
+                        destination_folder = folder_to_organize / file_extension
+            
+                    # Create the destination folder if it doesn't exist
+                    destination_folder.mkdir(exist_ok=True)
+            
+                    # Handle duplicate files
+                    target_file = destination_folder / item.name
+                    if target_file.exists():
+                        with log_file.open("a", encoding="utf-8") as log:
+                            log.write(f"Skipped (duplicate): {item}\n")
+                        continue
+            
+                    # Move the file
+                    item.rename(target_file)
+                    with log_file.open("a", encoding="utf-8") as log:
+                        log.write(f"Moved: {item} -> {target_file}\n")
+            
+            # Remove empty folders
+            for folder in folder_to_organize.rglob("*"):
+                if folder.is_dir() and not any(folder.iterdir()):
+                    folder.rmdir()
+                    with log_file.open("a", encoding="utf-8") as log:
+                        log.write(f"Removed empty folder: {folder}\n")
+            
+            # Open the log file
+            os.startfile(log_file)
+            
+            print("Files organized successfully. Log file opened.")
+            
+      </xmp> <button class="copyBtn" id="copyBtn1"></button>
+          <div class="description">&#8593; Click to copy &#8593;</div>
+        </div>
+        <br>
+      </dd>
+
+
+
+    <H3><span style='color: var(--primary);'>Features</span></H3>
+    <ul style="color: var(--primary); list-style-type: none">
+      <li><strong>Customizable Categories:</strong>
+        <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+             <li><span style="color: var(--primary);">You can easily add or modify file types in the file_categories dictionary.</span></li>
+          </ul>
+      </li>
+    </ul>
+    <ul style="color: var(--primary); list-style-type: none">
+      <li><strong>Duplicate Handling:</strong>
+        <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+             <li><span style="color: var(--primary);">The script skips files that already exist in the target folder, avoiding overwrites.</span></li>
+          </ul>
+      </li>
+    </ul>
+    <ul style="color: var(--primary); list-style-type: none">
+      <li><strong>Log File:</strong>
+        <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+             <li><span style="color: var(--primary);">A log file records all actions taken, including moved files, skipped files, and removed folders.</span></li>
+          </ul>
+      </li>
+    </ul>
+    <ul style="color: var(--primary); list-style-type: none">
+      <li><strong>Cross-Platform Compatibility:</strong>
+        <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+             <li><span style="color: var(--primary);">Works seamlessly on both Windows and Linux systems.</span></li>
+          </ul>
+      </li>
+    </ul>
+    <ul style="color: var(--primary); list-style-type: none">
+      <li><strong>Automation:</strong>
+        <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+             <li><span style="color: var(--primary);">Once set up, the script runs with a single command, saving hours of manual work.</span></li>
+          </ul>
+      </li>
+    </ul>
+
+<br>
+<hr class='dashed'>
+<br>
+
+<ul style="color: var(--primary); list-style-type: none">
+  <li>How to Use the Script
+    <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+         <li><span style="color: var(--primary);"><b>Install Python:</b> Ensure you have Python 3.7 or higher installed on your system.</span></li>
+         <li><span style="color: var(--primary);"><b>Edit the Script:</b> Update the <button class="tekst-button">folder_to_organize</button> variable with the path to your target folder.</span></li>
+         <li><span style="color: var(--primary);"><b>Run the Script:</b> Execute the script via a terminal or IDE like VS Code.</span></li>
+         <li><span style="color: var(--primary);"><b>Review the Log File:</b> The log file opens automatically, showing what the script did.</span></li>
+      </ul>
+  </li>
+</ul>
+
+<ul style="color: var(--primary); list-style-type: none">
+  <li>Possible Enhancements
+    <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+         <li><span style="color: var(--primary);"><b>GUI Version: </b><br>
+                                                  Add a graphical interface for selecting folders and viewing results.</span></li>
+         <li><span style="color: var(--primary);"><b>Scheduled Runs:</b> <br>
+                                                  Use a task scheduler to automate the script on a daily or weekly basis.</span></li>
+         <li><span style="color: var(--primary);"><b>Cloud Integration:</b> <br>
+                                                  Extend the script to organize files directly in cloud storage like Google Drive or Dropbox.</span></li>
+      </ul>
+  </li>
+</ul>
+
+
+<p><span style="color: var(--primary);"><b>Conclusion:</b> <br>
+  This Python-powered file organizer is a simple yet powerful tool to tame your digital chaos. 
+  With minimal setup and maximum flexibility, it's an excellent example of how Python can simplify everyday tasks. 
+  Try it out, and let us know how it works for you!
+</span></p>
+
+
+
+
+
+
+
+
+
+
             
 
 

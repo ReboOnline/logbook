@@ -30,8 +30,14 @@ a {
   text-decoration: none;
 }
 
+.monospace-text {
+  font-family: monospace;
+  color: var(--blue); /* Kies hier de gewenste kleur (bijvoorbeeld oranje) */
+  font-size: 13px;
+}
+
 hr.dashed {
-  border: 1px dashed var(--green);
+  border: 1px dashed;
   width: 70%;
   margin-left: 0px;
 }
@@ -66,8 +72,8 @@ img {
   color: var(--blue);
   border: 1px solid var(--blue); /* Kies hier wit of blauw */
   border-radius: 4px;
-  padding: 0px 2px;
-  font-size: 14px;
+  padding: 1px 3px;
+  font-size: 11px;
   font-family: monospace;
   /* cursor: pointer;
   transition: color 0.3s ease, border-color 0.3s ease; */
@@ -666,6 +672,17 @@ code-test {
   background-color: var(--info);
   text-align: center;
 }
+
+.no-bullets {
+  list-style-type: none; /* Verwijdert bullet points */
+  padding: 0;           /* Verwijdert standaard padding */
+  margin: 0;            /* Verwijdert standaard marges */
+}
+
+.no-bullets li {
+  padding: 5px 0; /* Optioneel: Voeg ruimte tussen de items toe */
+}
+
 
 /* Media query voor iPad en kleinere apparaten */
 @media (max-width: 1024px) {
