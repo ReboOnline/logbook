@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Setting Up Python</title>
+    <link rel="icon" type="image/x-icon" href="../../Media/ico/RB.ico">
+</head>
+<body>
+  <div class="wrapper">
+<!-- Navigation -->
+<nav class="main-nav">
+  <ul>
+    <li>
+      <a href="../../index.html">Home Online</a>
+    </li>
+    <li>
+      <a href="index-mint.html">Linux Mint</a>
+    </li>
+    <li>
+      <a href="html/ArcoLinux/arcolinuxmain.html">ArcoMain</a>
+    </li>
+   <li>
+      <a href="../../index.html#Read"><span style='color: var(--red);'>Read me first</span></a>
+    </li>
+  </ul>
+</nav>
+<!-- Navigation -->
+
+
+
+    <!--Section all Boxes-->
+    <section class="boxes">
+
+      <!--Div grid Box-->
+      <div class="box-left">
+        <i class="fas fa-chart-pie fa-4x"></i>
+
+        <a href='' class='navButton'>18-12-2024 | Under construction</a>
+        
+        <H3><span style='color: var(--primary);'>Setting Up Python Development in VS Code on Linux Mint</span></H3>
+        <p><span style="color: var(--primary);">This guide provides a step-by-step approach to setting up a Python development environment using Visual Studio Code (Code) on Linux Mint. 
+          It's designed to be comprehensive, including necessary plugins, configurations, and links for reference.</span></p>
+
+         <H3><span style='color: var(--primary);'><b>Preparation:</b></span></H3>
+
+         <ol start="1">
+           <li style="color: var(--primary);">Open your terminal and add the Microsoft GPG key and repository:
+             <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+
+<xmp id="copyText1" style="display: none;">wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo install -o root -g root -m 644 packages.microsoft.gpg /usr/share/keyrings/
+sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'</xmp> <button class="copyBtn" id="copyBtn1"></button>
+             </ul>
+           </li>
+         </ol>
+
+         <ol start="2">
+           <li style="color: var(--primary);">Update your package sources and install VS Code:
+             <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+<xmp id="copyText2" style="display: none;">sudo apt update
+sudo apt install code</xmp> <button class="copyBtn" id="copyBtn2"></button>
+             </ul>
+           </li>
+         </ol>
+        
+      </div>
+      <!--Div grid Box-->
+
+      <!--Div grid Box-->
+      <!-- <div class="box-left">
+        <i class="fas fa-chart-pie fa-4x"></i>
+        
+      </div> -->
+      <!--Div grid Box-->
+
+    </section>
+    <!--Section all Boxes-->
+
+
+
+
+
+
+
+
+
+ 
+
+   
+
+    <!-- Footer -->
+    <footer>
+      <p>The World of Rebo &copy; 2020</p>
+    </footer>
+
+  </div>
+  <!-- Wrapper Ends -->
+  <script src="../../js/script.js"></script>
+</body>
+</html>
