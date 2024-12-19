@@ -37,13 +37,12 @@
       <div class="box-left">
         <i class="fas fa-chart-pie fa-4x"></i>
 
-        <a href='' class='navButton'>18-12-2024 | Under construction</a>
+        <a href='' class='navButton'>19-12-2024 | Under construction</a>
         
         <H3><span style='color: var(--primary);'>Setting Up Python Development in VS Code on Linux Mint</span></H3>
-        <p><span style="color: var(--primary);">This guide provides a step-by-step approach to setting up a Python development environment using Visual Studio Code (Code) on Linux Mint. 
-          It's designed to be comprehensive, including necessary plugins, configurations, and links for reference.</span></p>
+        <p><span style="color: var(--primary);">This guide provides a step-by-step approach to setting up a Python development environment using Visual Studio Code (Code) on Linux Mint.</span></p>
 
-         <H3><span style='color: var(--primary);'><b>Preparation:</b></span></H3>
+         <H3><span style='color: var(--primary);'>1. Preparation:</span></H3>
 
          <ol start="1">
            <li style="color: var(--primary);">Open your terminal and add the Microsoft GPG key and repository:
@@ -64,9 +63,50 @@ sudo apt install code</xmp> <button class="copyBtn" id="copyBtn2"></button>
              </ul>
            </li>
          </ol>
-        
-      </div>
-      <!--Div grid Box-->
+
+
+<H3><span style='color: var(--primary);'>Install Python:</span></H3>
+<ol start="3">
+  <li style="color: var(--primary);">Verify if Python is installed:
+    <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+
+      <xmp id="copyText3" style="display: none;">python3 --version</xmp> <button class="copyBtn" id="copyBtn3"></button>
+    </ul>
+  </li>
+</ol>
+
+<ol start="4">
+  <li style="color: var(--primary);">If not installed, add it with:
+    <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+<xmp id="copyText4" style="display: none;">sudo apt install python3 python3-pip</xmp> <button class="copyBtn" id="copyBtn4"></button>
+    </ul>
+  </li>
+</ol>
+
+<H3><span style='color: var(--primary);'>2. Setting Up VS Code for Python</span></H3>
+<p><span style="color: var(--primary);">Essential Extensions:</span></p>
+
+<ol start="1">
+  <li style="color: var(--primary);">Open VS Code.
+    <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+    </ul>
+  </li>
+</ol>
+
+<ol start="2">
+  <li style="color: var(--primary);">Go to the Extensions Marketplace (Ctrl+Shift+X) and install these extensions:
+    <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+         <li><span style="color: var(--primary);"><strong><i>Python</i></strong> (Microsoft): For IntelliSense, debugging, and linting.</span></li>
+         <li><span style="color: var(--primary);"><strong><i>Pylance</i></strong> (Microsoft): Fast and enhanced code analysis.</span></li>
+         <li><span style="color: var(--primary);"><strong><i>Jupyter</i></strong> (Microsoft): For interactive Python notebooks.</span></li>
+    </ul>
+  </li>
+</ol>
+
+
+<!--Div grid Box-->
+</div>
+<!--Div grid Box-->
 
       <!--Div grid Box-->
       <!-- <div class="box-left">
