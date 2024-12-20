@@ -54,7 +54,8 @@
 gpg --dearmor > packages.microsoft.gpg
 sudo install -o root -g root -m 644 packages.microsoft.gpg /usr/share/keyrings/
 sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg]
-https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'</xmp><button class="copyBtn" id="copyBtn1"></button>
+https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'</xmp>
+              <button class="copyBtn" id="copyBtn1"></button>
             </ul>
           </li>
         </ol>
@@ -63,8 +64,7 @@ https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list
           <li style="color: var(--primary);">Update your package sources and install VS Code:
             <ul
               style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
-              <xmp id="copyText2" style="display: none;">
-sudo apt update
+              <xmp id="copyText2" style="display: none;">sudo apt update
 sudo apt install code</xmp> <button class="copyBtn" id="copyBtn2"></button>
             </ul>
           </li>
@@ -124,9 +124,11 @@ sudo apt install code</xmp> <button class="copyBtn" id="copyBtn2"></button>
         <p><span style="color: var(--primary);">Configure Python Interpreter:</span></p>
         <ol start="1">
           <li style="color: var(--primary);">
-            <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
-                 <li><span style="color: var(--primary);">Press Ctrl+Shift+P → Type Python: Select Interpreter.</span></li>
-                 <li><span style="color: var(--primary);">Choose the desired Python version (usually /usr/bin/python3).</span></li>
+            <ul
+              style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+              <li><span style="color: var(--primary);">Press Ctrl+Shift+P → Type Python: Select Interpreter.</span></li>
+              <li><span style="color: var(--primary);">Choose the desired Python version (usually
+                  /usr/bin/python3).</span></li>
             </ul>
           </li>
         </ol>
@@ -134,14 +136,15 @@ sudo apt install code</xmp> <button class="copyBtn" id="copyBtn2"></button>
         <p><span style="color: var(--primary);">Configure Linters and Formatters:</span></p>
         <ol start="1">
           <li style="color: var(--primary);">Add the following settings to your settings.json:
-            <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
-<xmp id="copyText5" style="display: none;">  {
-  "python.linting.enabled": true,
-  "python.linting.pylintEnabled": true,
-  "python.formatting.provider": "black",
-  "editor.formatOnSave": true
+            <ul
+              style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+              <xmp id="copyText5" style="display: none;"> {
+"python.linting.enabled": true,
+"python.linting.pylintEnabled": true,
+"python.formatting.provider": "black",
+"editor.formatOnSave": true
 }
-</xmp> <button class="copyBtn" id="copyBtn5"></button>
+              </xmp> <button class="copyBtn" id="copyBtn5"></button>
 
             </ul>
           </li>
@@ -157,49 +160,95 @@ pip3 install pylint black
           </li>
         </ul>
 
-  <H3><span style='color: var(--primary);'>3. Optional Settings</span></H3>
-  <p><span style="color: var(--primary);">Virtual Environment:</span></p>
+        <H3><span style='color: var(--primary);'>3. Optional Settings</span></H3>
+        <p><span style="color: var(--primary);">Virtual Environment:</span></p>
 
-  <ol start="1">
-    <li style="color: var(--primary);">Create a virtual environment:
-      <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
- 
-               <xmp id="copyText7" style="display: none;">
+        <ol start="1">
+          <li style="color: var(--primary);">Create a virtual environment:
+            <ul
+              style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+
+              <xmp id="copyText7" style="display: none;">
 python3 -m venv .venv
-           </xmp> <button class="copyBtn" id="copyBtn7"></button>
+              </xmp> <button class="copyBtn" id="copyBtn7"></button>
 
-      </ul>
-    </li>
-  </ol>
+            </ul>
+          </li>
+        </ol>
 
-  <ol start="2">
-    <li style="color: var(--primary);">Activate it:
-      <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+        <ol start="2">
+          <li style="color: var(--primary);">Activate it:
+            <ul
+              style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
 
-               <xmp id="copyText8" style="display: none;">
+              <xmp id="copyText8" style="display: none;">
 source .venv/bin/activate
-           </xmp> <button class="copyBtn" id="copyBtn8"></button>
+              </xmp> <button class="copyBtn" id="copyBtn8"></button>
 
-      </ul>
-    </li>
-  </ol>
-  <ol start="3">
-    <li style="color: var(--primary);">Set VS Code to use the virtual environment (Ctrl+Shift+P → Python: Select Interpreter).
-      <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
-      </ul>
-    </li>
-  </ol>
-<p><span style="color: var(--primary);">Set VS Code to use the virtual environment (Ctrl+Shift+P → Python: Select Interpreter).</span></p>
-<ol start="1">
-  <li style="color: var(--primary);">Configure the integrated terminal to use Bash:
-    <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
-         <li><span style="color: var(--primary);">Go to Settings <button class="tekst-button">(Ctrl+,)</button> and search for terminal.integrated.shell.linux.</span></li>
-    </ul>
-  </li>
-</ol>
+            </ul>
+          </li>
+        </ol>
+        <ol start="3">
+          <li style="color: var(--primary);">Set VS Code to use the virtual environment (Ctrl+Shift+P → Python: Select
+            Interpreter).
+            <ul
+              style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+            </ul>
+          </li>
+        </ol>
+        <p><span style="color: var(--primary);">Set VS Code to use the virtual environment (Ctrl+Shift+P → Python:
+            Select Interpreter).</span></p>
+        <ol start="1">
+          <li style="color: var(--primary);">Configure the integrated terminal to use Bash:
+            <ul
+              style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+              <li><span style="color: var(--primary);">Go to Settings <button class="tekst-button">(Ctrl+,)</button> and
+                  search for terminal.integrated.shell.linux.</span></li>
+              <li><span style="color: var(--primary);">Set it to: <br>
+                  <xmp id="copyText9" style="display: none;">
+"terminal.integrated.defaultProfile.linux": "bash"
+                  </xmp> <button class="copyBtn" id="copyBtn9"></button>
+                </span></li>
+            </ul>
+          </li>
+        </ol>
 
+        <p><span style="color: var(--primary);">Debugging:</span></p>
+        <ol start="1">
+          <li style="color: var(--primary);">Press <button class="tekst-button">F5</button> → Select <button
+              class="tekst-button">Python</button> → Follow the configuration wizard.
+            <ul
+              style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+            </ul>
+          </li>
+        </ol>
+        <ol start="2">
+          <li style="color: var(--primary);">Customize <button class="tekst-button">launch.json</button> if needed for
+            specific startup options.
+            <ul
+              style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+            </ul>
+          </li>
+        </ol>
 
-
+        <H3><span style='color: var(--primary);'>4. Useful Links</span></H3>
+        <ul style="color: var(--primary); list-style-type: none">
+          <li>
+            <ul
+              style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+              <li><span style="color: var(--primary);"><a class="Body-Link" href="https://code.visualstudio.com"
+                    target="_blank" rel="noopener noreferrer">Download VS Code</a></span></li>
+              <li><span style="color: var(--primary);"><a class="Body-Link" href="https://www.python.org/downloads/"
+                    target="_blank" rel="noopener noreferrer">Download Python</a></span></li>
+              <li><span style="color: var(--primary);"><a class="Body-Link"
+                    href="https://docs.python.org/3/library/venv.html" target="_blank"
+                    rel="noopener noreferrer">Virtualenv Documentation</a></span></li>
+              <li><span style="color: var(--primary);"><a class="Body-Link"
+                    href="https://black.readthedocs.io/en/stable/" target="_blank" rel="noopener noreferrer">Black Code
+                    Formatter</a></span></li>
+            </ul>
+          </li>
+        </ul>
 
         <!--Div grid Box-->
       </div>
