@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Notes and more">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/style.css">
-    <meta name='author' content='The World of Rebo'>
 
-    <title>Basic terminal commands</title>
-    <link rel="icon" type="image/x-icon" href="../../Media/ico/RB.ico">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Notes and more">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <meta name='author' content='The World of Rebo'>
+
+  <title>Basic terminal commands</title>
+  <link rel="icon" type="image/x-icon" href="../../Media/ico/RB.ico">
 </head>
+
 <body>
   <div class="wrapper">
 
-<!-- Navigation -->
-<nav class="main-nav">
-  <ul>
-    <li>
-      <a href="../../index.html">Home Online</a>
-    </li>
-    <li>
-      <a href="index-mint.html">Linux Mint</a>
-    </li>
-    <li>
-      <a href="html/ArcoLinux/arcolinuxmain.html">ArcoMain</a>
-    </li>
-   <li>
-      <a href="../../index.html#Read"><span style='color: var(--red);'>Read me first</span></a>
-    </li>
-  </ul>
-</nav>
-<!-- Navigation -->
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <ul>
+        <li>
+          <a href="../../index.html">Home Online</a>
+        </li>
+        <li>
+          <a href="index-mint.html">Linux Mint</a>
+        </li>
+        <li>
+          <a href="html/ArcoLinux/arcolinuxmain.html">ArcoMain</a>
+        </li>
+        <li>
+          <a href="../../index.html#Read"><span style='color: var(--red);'>Read me first</span></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Navigation -->
 
     <!-- Info Section één_block -->
     <section class="info">
       <div>
-<!-- StickyButton -->
-<div class="fixed">  
-  <a href="#"><span style='color: var(--blue);'>Top</span></a>
-  </div>
-<!-- StickyButton -->
+        <!-- StickyButton -->
+        <div class="fixed">
+          <a href="#"><span style='color: var(--blue);'>Top</span></a>
+        </div>
+        <!-- StickyButton -->
 
-<!-- Tekstopmaak 
+        <!-- Tekstopmaak 
 -- <b> = bold text 
 -- <i> = italic text 
 -- <del> = doorgestreept 
@@ -50,7 +52,7 @@
 -- <mark> = geel gemarkeerd 
 -- <sup> = kleine boventekst -->
 
-<!-- strongBR
+        <!-- strongBR
 -- li-strong
 -- dd-strong
 -- codeblue
@@ -63,66 +65,52 @@
 -- ulli
 -- olli
 -- Hieronder een snippet 'colorvak' met -->
+
+        <code><span style='color: var(--dark);'> <span style='color: var(--blue);'><a class='Body-Link'
+                href='index_terminal.html'>Home terminal</a></span></code>
+
+        <h1>Mastering the Linux Terminal: Commands for Beginners to Advanced Users</h1>
+        <p><span style="color: var(--primary);">The Linux terminal is a powerful tool that allows you to interact with
+            your operating system at a deep level.
+            Whether you're a complete beginner or an experienced user, there's always something new to learn.
+            Here's a comprehensive list of terminal commands, starting with the basics and moving towards more advanced
+            commands.</span></p>
+
+<hr>
+
+<H3><span style='color: var(--primary);'>Part 1: Basics</span></H3>
+<ol start="1">
+  <li style="color: var(--primary);"><strong>Navigating the File System</strong>
+    <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+         <li><span style="color: var(--primary);"><strong>pwd</strong>: Prints the current working directory.</span> <br>
+            <span class="monospace-text" style="color: var(--blue);">PWD</span>
+        </li>
+        <br>
+      </li>
+        <li><span style="color: var(--primary);"><strong>ls</strong>: Lists files and directories.</span> <br>
+<span class="monospace-text" style="color: var(--blue);">ls</span> <br>
+<span class="monospace-text" style="color: var(--blue);">ls -l</span> <span style="color: var(--green);">&#8194; # Long format</span> <br>
+<span class="monospace-text" style="color: var(--blue);">ls -a</span> <span style="color: var(--green);">&#8194; # Include hidden files</span>
+</li>
+<br>
+<li><span style="color: var(--primary);"><strong>cd</strong>: Changes the current directory.</span> <br>
+<span class="monospace-text" style="color: var(--blue);">cd /path/to/directory</span> <br>
+<span class="monospace-text" style="color: var(--blue);">cd ~    # Go to the home directory</span>  <br>
+<span class="monospace-text" style="color: var(--blue);">cd ..   # Move up one directory</span>
   
- 
- 
-<code><span style='color: var(--dark);'> <span style='color: var(--blue);'><a class='Body-Link' href='index_terminal.html'>Home terminal</a></span></code>
-<br>
-<br>
-<dd>
-<strong style='color: var(--green);'>1. ls - Lijst bestanden en mappen</strong><br>
-<br>
-Het <xmp id="copyText1" style="display: none;">ls</xmp> <button class="copyBtn" id="copyBtn1"></button> commando is een van de meest gebruikte in de terminal. Het wordt gebruikt om de inhoud van een directory weer te geven. <br>
-Als je de volledige details van bestanden wilt zien, kun je de <span style='color: var(--blue);'>-l</span> optie gebruiken als 
-<xmp id="copyText2" style="display: none;">ls -l</xmp> <button class="copyBtn" id="copyBtn2"></button> <br>
-Dit geeft een gedetailleerde lijst van bestanden, inclusief permissies, eigenaar, grootte en modificatiedatum.
-</dd>
-<br>
-<hr>
-<br>
-
-<!--Hieronder een snippet 'colorvak' met strongBR, li-strong, dd-strong, codeblue, aReboBlue,
-imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
-
- 
-
-copy de volgende <xmp id="copyText3" style="display: none;">om deze Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium officiis iusto facere? Fugiat reiciendis at vel suscipit cum quis aperiam!</xmp> <button class="copyBtn" id="copyBtn3"></button> test Lorem ipsum dolor sit, amet consectetur adipisicing.
-
-<!-- <xmp id="copyText2" style="display: none;">Tekst voor kopieerknop 2.</xmp> <button class="copyBtn" id="copyBtn2"></button> -->
-
-
-
-</dd>
-<br>
-<hr>
-<br>
-
-<!--Hieronder een snippet 'colorvak' met strongBR, li-strong, dd-strong, codeblue, aReboBlue,
-imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
-
-
-
-
-
-
-
-
-                 
-
- 
-
-
+</li>
+    </ul>
+</ol>
 
 
       </div>
     </section>
 
-   
-
     <!-- Footer -->
     <footer>
       <!-- <a href="../../index.html"><span style='color: var(--blue);'>Home</span></a> -->
-      <code><span style='color: var(--dark);'> <span style='color: var(--blue);'> <a class='Body-Link' href='../../index.html'>Home</a> </span></code>
+      <code><span style='color: var(--dark);'> <span style='color: var(--blue);'> <a class='Body-Link'
+              href='../../index.html'>Home</a> </span></code>
     </footer>
     <!-- Footer -->
 
@@ -131,4 +119,5 @@ imgRebo, spanBleuColor, xmp, xmp-code, codespandark, ulli, olli -->
   <script src="../../js/script.js"></script>
 
 </body>
+
 </html>
