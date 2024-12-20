@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/style.css">
-    <title>Setting Up Python</title>
-    <link rel="icon" type="image/x-icon" href="../../Media/ico/RB.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>Setting Up Python</title>
+  <link rel="icon" type="image/x-icon" href="../../Media/ico/RB.ico">
 </head>
+
 <body>
   <div class="wrapper">
-<!-- Navigation -->
-<nav class="main-nav">
-  <ul>
-    <li>
-      <a href="../../index.html">Home Online</a>
-    </li>
-    <li>
-      <a href="index-mint.html">Linux Mint</a>
-    </li>
-    <li>
-      <a href="html/ArcoLinux/arcolinuxmain.html">ArcoMain</a>
-    </li>
-   <li>
-      <a href="../../index.html#Read"><span style='color: var(--red);'>Read me first</span></a>
-    </li>
-  </ul>
-</nav>
-<!-- Navigation -->
-
-
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <ul>
+        <li>
+          <a href="../../index.html">Home Online</a>
+        </li>
+        <li>
+          <a href="index-mint.html">Linux Mint</a>
+        </li>
+        <li>
+          <a href="html/ArcoLinux/arcolinuxmain.html">ArcoMain</a>
+        </li>
+        <li>
+          <a href="../../index.html#Read"><span style='color: var(--red);'>Read me first</span></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Navigation -->
 
     <!--Section all Boxes-->
     <section class="boxes">
@@ -37,76 +37,173 @@
       <div class="box-left">
         <i class="fas fa-chart-pie fa-4x"></i>
 
-        <a href='' class='navButton'>19-12-2024 | Under construction</a>
-        
+        <button class="tekst-button">19-12-2024 | Under construction</button>
+
         <H3><span style='color: var(--primary);'>Setting Up Python Development in VS Code on Linux Mint</span></H3>
-        <p><span style="color: var(--primary);">This guide provides a step-by-step approach to setting up a Python development environment using Visual Studio Code (Code) on Linux Mint.</span></p>
+        <p><span style="color: var(--primary);">This guide provides a step-by-step approach to setting up a Python
+            development environment using Visual Studio Code (Code) on Linux Mint.</span></p>
 
-         <H3><span style='color: var(--primary);'>1. Preparation:</span></H3>
+        <H3><span style='color: var(--primary);'>1. Preparation:</span></H3>
 
-         <ol start="1">
-           <li style="color: var(--primary);">Open your terminal and add the Microsoft GPG key and repository:
-             <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+        <ol start="1">
+          <li style="color: var(--primary);">Open your terminal and add the Microsoft GPG key and repository:
+            <ul
+              style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
 
-<xmp id="copyText1" style="display: none;">wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+              <xmp id="copyText1" style="display: none;">wget -qO- https://packages.microsoft.com/keys/microsoft.asc |
+gpg --dearmor > packages.microsoft.gpg
 sudo install -o root -g root -m 644 packages.microsoft.gpg /usr/share/keyrings/
-sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'</xmp> <button class="copyBtn" id="copyBtn1"></button>
-             </ul>
-           </li>
-         </ol>
+sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg]
+https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'</xmp><button class="copyBtn" id="copyBtn1"></button>
+            </ul>
+          </li>
+        </ol>
 
-         <ol start="2">
-           <li style="color: var(--primary);">Update your package sources and install VS Code:
-             <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
-<xmp id="copyText2" style="display: none;">sudo apt update
+        <ol start="2">
+          <li style="color: var(--primary);">Update your package sources and install VS Code:
+            <ul
+              style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+              <xmp id="copyText2" style="display: none;">
+sudo apt update
 sudo apt install code</xmp> <button class="copyBtn" id="copyBtn2"></button>
-             </ul>
-           </li>
-         </ol>
+            </ul>
+          </li>
+        </ol>
 
+        <H3><span style='color: var(--primary);'>Install Python:</span></H3>
+        <ol start="3">
+          <li style="color: var(--primary);">Verify if Python is installed:
+            <ul
+              style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
 
-<H3><span style='color: var(--primary);'>Install Python:</span></H3>
-<ol start="3">
-  <li style="color: var(--primary);">Verify if Python is installed:
-    <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+              <xmp id="copyText3" style="display: none;">python3 --version</xmp> <button class="copyBtn"
+                id="copyBtn3"></button>
+            </ul>
+          </li>
+        </ol>
 
-      <xmp id="copyText3" style="display: none;">python3 --version</xmp> <button class="copyBtn" id="copyBtn3"></button>
-    </ul>
-  </li>
-</ol>
+        <ol start="4">
+          <li style="color: var(--primary);">If not installed, add it with:
+            <ul
+              style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+              <xmp id="copyText4" style="display: none;">sudo apt install python3 python3-pip</xmp> <button
+                class="copyBtn" id="copyBtn4"></button>
+            </ul>
+          </li>
+        </ol>
 
-<ol start="4">
-  <li style="color: var(--primary);">If not installed, add it with:
-    <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
-<xmp id="copyText4" style="display: none;">sudo apt install python3 python3-pip</xmp> <button class="copyBtn" id="copyBtn4"></button>
-    </ul>
-  </li>
-</ol>
+        <H3><span style='color: var(--primary);'>2. Setting Up VS Code for Python</span></H3>
+        <p><span style="color: var(--primary);">Essential Extensions:</span></p>
 
-<H3><span style='color: var(--primary);'>2. Setting Up VS Code for Python</span></H3>
-<p><span style="color: var(--primary);">Essential Extensions:</span></p>
+        <ol start="1">
+          <li style="color: var(--primary);">Open VS Code.
+            <ul
+              style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+            </ul>
+          </li>
+        </ol>
 
+        <ol start="2">
+          <li style="color: var(--primary);">Go to the Extensions Marketplace (Ctrl+Shift+X) and install these
+            extensions:
+            <ul
+              style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+              <li><span style="color: var(--primary);"><strong><i>Python</i></strong> (Microsoft): For IntelliSense,
+                  debugging, and linting.</span></li>
+              <li><span style="color: var(--primary);"><strong><i>Pylance</i></strong> (Microsoft): Fast and enhanced
+                  code analysis.</span></li>
+              <li><span style="color: var(--primary);"><strong><i>Jupyter</i></strong> (Microsoft): For interactive
+                  Python notebooks.</span></li>
+              <li><span style="color: var(--primary);"><strong><i>GitLens</i></strong> (Optional, for version
+                  control).</span></li>
+              <li><span style="color: var(--primary);"><strong><i>Prettier</i></strong> (Optional, for consistent code
+                  formatting).</span></li>
+            </ul>
+          </li>
+        </ol>
+        <p><span style="color: var(--primary);">Configure Python Interpreter:</span></p>
+        <ol start="1">
+          <li style="color: var(--primary);">
+            <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+                 <li><span style="color: var(--primary);">Press Ctrl+Shift+P → Type Python: Select Interpreter.</span></li>
+                 <li><span style="color: var(--primary);">Choose the desired Python version (usually /usr/bin/python3).</span></li>
+            </ul>
+          </li>
+        </ol>
+
+        <p><span style="color: var(--primary);">Configure Linters and Formatters:</span></p>
+        <ol start="1">
+          <li style="color: var(--primary);">Add the following settings to your settings.json:
+            <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+<xmp id="copyText5" style="display: none;">  {
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.formatting.provider": "black",
+  "editor.formatOnSave": true
+}
+</xmp> <button class="copyBtn" id="copyBtn5"></button>
+
+            </ul>
+          </li>
+        </ol>
+
+        <ul style="color: var(--primary); list-style-type: none">
+          <li>Install Black and Pylint in your environment:
+            <ul style="list-style-type: none">
+              <xmp id="copyText6" style="display: none;">
+pip3 install pylint black
+              </xmp> <button class="copyBtn" id="copyBtn6"></button>
+            </ul>
+          </li>
+        </ul>
+
+  <H3><span style='color: var(--primary);'>3. Optional Settings</span></H3>
+  <p><span style="color: var(--primary);">Virtual Environment:</span></p>
+
+  <ol start="1">
+    <li style="color: var(--primary);">Create a virtual environment:
+      <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+ 
+               <xmp id="copyText7" style="display: none;">
+python3 -m venv .venv
+           </xmp> <button class="copyBtn" id="copyBtn7"></button>
+
+      </ul>
+    </li>
+  </ol>
+
+  <ol start="2">
+    <li style="color: var(--primary);">Activate it:
+      <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+
+               <xmp id="copyText8" style="display: none;">
+source .venv/bin/activate
+           </xmp> <button class="copyBtn" id="copyBtn8"></button>
+
+      </ul>
+    </li>
+  </ol>
+  <ol start="3">
+    <li style="color: var(--primary);">Set VS Code to use the virtual environment (Ctrl+Shift+P → Python: Select Interpreter).
+      <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+      </ul>
+    </li>
+  </ol>
+<p><span style="color: var(--primary);">Set VS Code to use the virtual environment (Ctrl+Shift+P → Python: Select Interpreter).</span></p>
 <ol start="1">
-  <li style="color: var(--primary);">Open VS Code.
+  <li style="color: var(--primary);">Configure the integrated terminal to use Bash:
     <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
-    </ul>
-  </li>
-</ol>
-
-<ol start="2">
-  <li style="color: var(--primary);">Go to the Extensions Marketplace (Ctrl+Shift+X) and install these extensions:
-    <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
-         <li><span style="color: var(--primary);"><strong><i>Python</i></strong> (Microsoft): For IntelliSense, debugging, and linting.</span></li>
-         <li><span style="color: var(--primary);"><strong><i>Pylance</i></strong> (Microsoft): Fast and enhanced code analysis.</span></li>
-         <li><span style="color: var(--primary);"><strong><i>Jupyter</i></strong> (Microsoft): For interactive Python notebooks.</span></li>
+         <li><span style="color: var(--primary);">Go to Settings <button class="tekst-button">(Ctrl+,)</button> and search for terminal.integrated.shell.linux.</span></li>
     </ul>
   </li>
 </ol>
 
 
-<!--Div grid Box-->
-</div>
-<!--Div grid Box-->
+
+
+        <!--Div grid Box-->
+      </div>
+      <!--Div grid Box-->
 
       <!--Div grid Box-->
       <!-- <div class="box-left">
@@ -118,18 +215,6 @@ sudo apt install code</xmp> <button class="copyBtn" id="copyBtn2"></button>
     </section>
     <!--Section all Boxes-->
 
-
-
-
-
-
-
-
-
- 
-
-   
-
     <!-- Footer -->
     <footer>
       <p>The World of Rebo &copy; 2020</p>
@@ -139,4 +224,5 @@ sudo apt install code</xmp> <button class="copyBtn" id="copyBtn2"></button>
   <!-- Wrapper Ends -->
   <script src="../../js/script.js"></script>
 </body>
+
 </html>
