@@ -61,16 +61,47 @@
           <hr>
           <br>
           
-          <H3><span style='color: var(--primary);'>🔧 Step 0: Check Your System Compatibility</span></H3>
-          <p><span style="color: var(--primary);">Before diving into the installation, make sure your system meets the practical (not official) requirements for running Windows 11.</span></p>
-
-          <H3><span style='color: var(--primary);'></span></H3>
+          <H3><span style='color: var(--primary);'>Step 0: Check Your System Compatibility</span></H3>
           <ol start="1">
-            <li style="color: var(--primary);">Press Win + R, type msinfo32, and hit Enter.
+            <li style="color: var(--primary);">Before diving into the installation, make sure your system meets the practical (not official) requirements for running Windows 11.
               <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+                <li><span style="color: var(--primary);">Press <span style="color: var(--blue);">Win + R</span>, type <xmp id="copyText1" style="display: none;">msinfo32</xmp> <button class="copyBtn" id="copyBtn1"></button>, and hit Enter.</span></li>
               </ul>
             </li>
           </ol>
+          <ol start="2">
+            <li style="color: var(--primary);">Look for BIOS Mode:
+              <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+                   <li><span style="color: var(--primary);">If it says <strong>UEFI</strong> – perfect!</span></li>
+                   <li><span style="color: var(--primary);">If it says <strong>Legacy</strong>, you'll need to convert to UEFI before proceeding.</span></li>
+              </ul>
+            </li>
+          </ol>
+          <H3><span style='color: var(--primary);'>Retail License Check</span></H3>
+          <ol start="3">
+            <li style="color: var(--primary);">Open a terminal or powershell (cmd.exe) and type:
+              <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+                   <li><span style="color: var(--primary);">    <xmp id="copyText2" style="display: none;">slmgr /dli</xmp> <button class="copyBtn" id="copyBtn2"></button></span> and click OK</li>
+                   <li><span style="color: var(--primary);">If it says Retail, you're good to go. This means your license is transferable and will re-activate after reinstalling.</span></li>
+              </ul>
+            </li>
+          </ol>
+
+          <br>
+          <hr>
+          <br>
+
+          <H3><span style='color: var(--primary);'>Step 1: Download the Windows 11 ISO</span></H3>
+          <ul style="color: var(--primary); list-style-type: none">
+            <li>
+              <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+                <li><span style="color: var(--primary);">Go to the official <a class="Body-Link" href="https://www.microsoft.com/nl-nl/software-download/windows11" target="_blank" rel="noopener noreferrer">Microsoft Windows 11 download page</a>.</span></li>
+                <li><span style="color: var(--primary);">Scroll down to Download Windows 11 Disk Image (ISO).</span></li>
+                <li><span style="color: var(--primary);">Select the latest edition, click <b>Download.</b></span></li>
+                <li><span style="color: var(--primary);">Choose your language and download the 64-bit ISO.</span></li>
+                </ul>
+            </li>
+          </ul>  
 
       </div>
 
