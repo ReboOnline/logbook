@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../css/style.css">
-  <title>Empty index</title>
+  <title>Install Windows 11</title>
   <link rel="icon" type="image/x-icon" href="../../Media/ico/RB.ico">
 </head>
 
@@ -52,63 +52,224 @@
 
         <button class="tekst-button">18-04-2025</button>
 
-        <H3><span style='color: var(--primary);'>How to Install Windows 11 on an Unsupported PC (with Rufus) – Full Guide</span></H3>
-        <p><span style="color: var(--primary);">Are you running Windows 10 on an older PC and considering upgrading to Windows 11 despite 
-          the infamous compatibility checks? <br> Good news: it's absolutely possible, and this guide will walk you through it step-by-step – including how 
-          to bypass TPM and Secure Boot requirements using Rufus. <br>
-          We'll start with some essential checks to ensure a smooth transition.</span></p>
-          <br>
-          <hr>
-          <br>
-          
-          <H3><span style='color: var(--primary);'>Step 0: Check Your System Compatibility</span></H3>
-          <ol start="1">
-            <li style="color: var(--primary);">Before diving into the installation, make sure your system meets the practical (not official) requirements for running Windows 11.
-              <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
-                <li><span style="color: var(--primary);">Press <span style="color: var(--blue);">Win + R</span>, type <xmp id="copyText1" style="display: none;">msinfo32</xmp> <button class="copyBtn" id="copyBtn1"></button>, and hit Enter.</span></li>
-              </ul>
-            </li>
-          </ol>
-          <ol start="2">
-            <li style="color: var(--primary);">Look for BIOS Mode:
-              <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
-                   <li><span style="color: var(--primary);">If it says <strong>UEFI</strong> – perfect!</span></li>
-                   <li><span style="color: var(--primary);">If it says <strong>Legacy</strong>, you'll need to convert to UEFI before proceeding.</span></li>
-              </ul>
-            </li>
-          </ol>
-          <H3><span style='color: var(--primary);'>Retail License Check</span></H3>
-          <ol start="3">
-            <li style="color: var(--primary);">Open a terminal or powershell (cmd.exe) and type:
-              <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
-                   <li><span style="color: var(--primary);">    <xmp id="copyText2" style="display: none;">slmgr /dli</xmp> <button class="copyBtn" id="copyBtn2"></button></span> and click OK</li>
-                   <li><span style="color: var(--primary);">If it says Retail, you're good to go. This means your license is transferable and will re-activate after reinstalling.</span></li>
-              </ul>
-            </li>
-          </ol>
+        <p><span style="color: var(--primary);">Before you start or if you run into any issues, Please <a class="Body-Link" href="../../index.html#Read" target="_blank" rel="noopener noreferrer"><span style='color: var(--red);'> Read me first</span></a> </span></p>
 
-          <br>
-          <hr>
-          <br>
+        <H3><span style='color: var(--primary);'>How to Install Windows 11 on an Unsupported PC (with Rufus) – Full
+            Guide</span></H3>
+        <p><span style="color: var(--primary);">Are you running Windows 10 on an older PC and considering upgrading to
+            Windows 11 despite
+            the infamous compatibility checks? <br> Good news: it's absolutely possible, and this guide will walk you
+            through it step-by-step – including how
+            to bypass TPM and Secure Boot requirements using Rufus. <br>
+            We'll start with some essential checks to ensure a smooth transition.</span></p>
+        <br>
+        <hr>
+        <br>
 
-          <H3><span style='color: var(--primary);'>Step 1: Download the Windows 11 ISO</span></H3>
-          <ul style="color: var(--primary); list-style-type: none">
-            <li>
-              <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
-                <li><span style="color: var(--primary);">Go to the official <a class="Body-Link" href="https://www.microsoft.com/nl-nl/software-download/windows11" target="_blank" rel="noopener noreferrer">Microsoft Windows 11 download page</a>.</span></li>
-                <li><span style="color: var(--primary);">Scroll down to Download Windows 11 Disk Image (ISO).</span></li>
-                <li><span style="color: var(--primary);">Select the latest edition, click <b>Download.</b></span></li>
-                <li><span style="color: var(--primary);">Choose your language and download the 64-bit ISO.</span></li>
+        <H3><span style='color: var(--primary);'>Step 0: Check Your System Compatibility</span></H3>
+        <ol start="1">
+          <li style="color: var(--primary);">Before diving into the installation, make sure your system meets the
+            practical (not official) requirements for running Windows 11.
+            <ul
+              style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+              <li><span style="color: var(--primary);">Press <span style="color: var(--blue);">Win + R</span>, type <xmp
+                    id="copyText1" style="display: none;">msinfo32</xmp> <button class="copyBtn"
+                    id="copyBtn1"></button>, and hit Enter.</span></li>
+            </ul>
+          </li>
+        </ol>
+        <ol start="2">
+          <li style="color: var(--primary);">Look for BIOS Mode:
+            <ul
+              style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+              <li><span style="color: var(--primary);">If it says <strong>UEFI</strong> – perfect!</span></li>
+              <li><span style="color: var(--primary);">If it says <strong>Legacy</strong>, you'll need to convert to
+                  UEFI before proceeding.</span></li>
+            </ul>
+          </li>
+        </ol>
+        <H3><span style='color: var(--primary);'>Retail License Check</span></H3>
+        <ol start="3">
+          <li style="color: var(--primary);">Open a terminal (cmd.exe) or powershell and type or copy:
+            <ul
+              style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+              <li><span style="color: var(--primary);">
+                  <xmp id="copyText2" style="display: none;">slmgr /dli</xmp> <button class="copyBtn"
+                    id="copyBtn2"></button>
+                </span> and click <span style="color: var(--blue);"><b>OK</b></span></li>
+              <li><span style="color: var(--primary);">If it says Retail, you're good to go. This means your license is
+                  transferable and will re-activate after reinstalling.</span></li>
+            </ul>
+          </li>
+        </ol>
+
+        <br>
+        <hr>
+        <br>
+
+        <H3><span style='color: var(--primary);'>Step 1: Download the Windows 11 ISO</span></H3>
+        <ul style="color: var(--primary); list-style-type: none">
+          <li>
+            <ul
+              style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+              <li><span style="color: var(--primary);">Go to the official <a class="Body-Link"
+                    href="https://www.microsoft.com/nl-nl/software-download/windows11" target="_blank"
+                    rel="noopener noreferrer">Microsoft Windows 11 download page</a>.</span></li>
+              <li><span style="color: var(--primary);">Scroll down to Download Windows 11 Disk Image (ISO).</span></li>
+              <li><span style="color: var(--primary);">Select the latest edition, click <b>Download.</b></span></li>
+              <li><span style="color: var(--primary);">Choose your language and download the 64-bit ISO.</span></li>
+            </ul>
+          </li>
+        </ul>
+
+        <br>
+        <hr>
+        <br>
+
+        <H3><span style='color: var(--primary);'>Step 2: Download and Start Rufus</span></H3>
+        <ul style="color: var(--primary); list-style-type: none">
+          <li>
+            <ul
+              style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+              <li><span style="color: var(--primary);">Go to <a class="Body-Link" href="https://rufus.ie/en/"
+                    target="_blank" rel="noopener noreferrer">Rufus official</a> site.</span></li>
+              <li><span style="color: var(--primary);">Download the latest portable version.</span></li>
+              <li><span style="color: var(--primary);">Launch Rufus (no install needed).</span></li>
+            </ul>
+          </li>
+        </ul>
+
+        <br>
+        <hr>
+        <br>
+
+        <H3><span style='color: var(--primary);'>Step 3: Prepare Your USB Drive</span></H3>
+        <ul style="color: var(--primary); list-style-type: none">
+          <li>
+            <ul
+              style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+              <li><span style="color: var(--primary);">Insert a USB stick with at least 8GB of space.</span></li>
+              <li><span style="color: var(--primary);">All data will be erased, so back up if necessary.</span></li>
+            </ul>
+          </li>
+        </ul>
+
+        <br>
+        <hr>
+        <br>
+
+        <H3><span style='color: var(--primary);'>Step 4: Configure Rufus</span></H3>
+        <ul style="color: var(--primary); list-style-type: none">
+          <li>
+            <ul
+              style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+              <li><span style="color: var(--primary);"><b>Device:</b> Select your USB stick.</span></li>
+              <li><span style="color: var(--primary);"><b>Boot selection:</b> Click Select and choose the Windows 11
+                  ISO.</span></li>
+              <li><span style="color: var(--primary);"><b>Image option:</b> Leave it at Standard Windows
+                  Installation.</span></li>
+              <li><span style="color: var(--primary);"><b>Partition scheme:</b> Choose GPT.</span></li>
+              <li><span style="color: var(--primary);"><b>Target system:</b> Ensure it's <span
+                    style="color: var(--blue);">UEFI</span> (<span style="color: var(--blue);">non-CSM</span>).</span>
+              </li>
+              <li><span style="color: var(--primary);">Click Start.</span></li>
+              <h4>A pop-up will appear with custom options:</h4>
+              <li><span style="color: var(--primary);">☑ Remove requirement for 4GB+ RAM, Secure Boot, and TPM
+                  2.0</span></li>
+              <li><span style="color: var(--primary);">☑ Remove requirement for online Microsoft account (optional –
+                  leave unchecked if you plan to use your MS account)</span></li>
+              <p><span style="color: var(--primary);">Click <span style="color: var(--blue);"><b>OK</b></span> to start
+                  the USB creation process.</span></p>
+            </ul>
+          </li>
+        </ul>
+
+        <br>
+        <hr>
+        <br>
+
+        <H3><span style='color: var(--primary);'>Step 5: Boot from USB & Install Windows 11</span></H3>
+        <ul style="color: var(--primary); list-style-type: none">
+          <li>
+            <ul
+              style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+              <li><span style="color: var(--primary);">Restart your PC.</span></li>
+              <li><span style="color: var(--primary);">Enter the Boot Menu (commonly via F12, Esc, or Del during
+                  startup).</span></li>
+              <li><span style="color: var(--primary);">Choose the USB stick as the boot device.</span></li>
+              <li><span style="color: var(--primary);">Follow the installation prompts:</span>
+
+                <ul
+                  style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+                  <li><span style="color: var(--primary);">Choose Custom install (not upgrade)</span></li>
+                  <li><span style="color: var(--primary);">Delete all partitions on your drive (if doing a clean
+                      install)</span></li>
+                  <li><span style="color: var(--primary);">Let the installer do the rest!</span></li>
                 </ul>
-            </li>
-          </ul>  
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <br>
+        <hr>
+        <br>
+
+        <H3><span style='color: var(--primary);'>Step 6: Activate Windows 11</span></H3>
+        <ul style="color: var(--primary); list-style-type: none">
+          <li>If you:
+            <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+                 <li><span style="color: var(--primary);">Use the same Microsoft account as before,</span></li>
+                 <li><span style="color: var(--primary);">And previously had an activated copy of Windows 10,</span></li>
+                 <p><span style="color: var(--primary);">Then Windows 11 will activate automatically once you connect to the internet. <br>
+                  You can check activation under: <span style="color: var(--blue);">Settings</span> ➔ <span style="color: var(--blue);">System</span> ➔ <span style="color: var(--blue);">Activation</span></span></p>
+              </ul>
+          </li>
+        </ul>
+
+        <br>
+        <hr>
+        <br>
+
+        <H3><span style='color: var(--primary);'>🚫 No TPM or Secure Boot? No Problem!</span></H3>
+        <ul style="color: var(--primary); list-style-type: none">
+          <li>Thanks to Rufus, these requirements are bypassed during install. You don't need to modify your BIOS or do anything risky. However:
+            <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+                 <li><span style="color: var(--primary);">Your system may receive a warning under Settings</span></li>
+
+                 <li><span style="color: var(--primary);">Microsoft may block future updates on unsupported hardware – but as of now, security updates continue to arrive</span></li>
+              </ul>
+          </li>
+        </ul>
+
+        <br>
+        <hr>
+        <br>
+
+        <H3><span style='color: var(--primary);'>😊 Conclusion</span></H3>
+        <ul style="color: var(--primary); list-style-type: none">
+          <li>You now have a fully working Windows 11 installation on hardware that Microsoft technically doesn’t support
+            <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+                 <li><span style="color: var(--primary);">but performs just fine.</span></li>
+              </ul>
+          </li>
+        </ul>
+        <ul style="color: var(--primary); list-style-type: none">
+          <li>Tips:
+            <ul style="list-style-type: disc; list-style-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><line x1=\'0\' y1=\'6\' x2=\'12\' y2=\'6\' style=\'stroke:whitesmoke;stroke-width:1\' /></svg>');">
+                 <li><span style="color: var(--primary);">Keep your Windows 10 backup handy (use tools like Macrium Reflect if you want a full image)</span></li>
+                 <li><span style="color: var(--primary);">Make sure you use an SSD for smooth performance</span></li>
+                 <li><span style="color: var(--primary);">Enjoy the cleaner UI, Snap Layouts, and other modern features in Windows 11!</span></li>
+              </ul>
+          </li>
+        </ul>
+        <!-- <p><span style="color: var(--primary);">And for last: If you run into any issues, read <a href="../../index.html#Read"><span style='color: var(--red);'>Read me first</span></a></span> again</p> -->
+        <p><span style="color: var(--primary);">And for last: If you run into any issues,<a class="Body-Link" href="../../index.html#Read" target="_blank" rel="noopener noreferrer"><span style='color: var(--red);'> Read me first</span></a> again</span></p>
 
       </div>
 
     </section>
     <!--Section all Boxes-->
-
-
 
     <!-- Footer -->
     <footer>
